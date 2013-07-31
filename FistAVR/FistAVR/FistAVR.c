@@ -11,6 +11,8 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+#include "MotorDriver.h"
+
 void delayms( uint16_t millis )
 {
 	while ( millis )
@@ -22,6 +24,9 @@ void delayms( uint16_t millis )
 
 int main(void)
 {
+	Init_PWM0();
+	
+	
 	DDRB |= 1 << PB0;
 	
 	PORTB &= ~( 1 << PB0 );
