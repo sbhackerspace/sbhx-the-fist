@@ -107,6 +107,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="EncoderReader.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EncoderReader.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="FistAVR.c">
       <SubType>compile</SubType>
     </Compile>
