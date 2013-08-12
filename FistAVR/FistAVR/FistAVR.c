@@ -25,23 +25,50 @@ void delayms( uint16_t millis )
 int main(void)
 {
 	Init_PWM0();
+	Init_Motor1();
 	
 	
 	DDRB |= 1 << PB0;
 	
 	PORTB &= ~( 1 << PB0 );
 	
+	Set_Motor1_Velocity( 100 );
+	
+	int16_t vel = 0;
+	char dir = 1;
 
 	while ( 1 )
 	{
 
-		PORTB |= 1 << PB0;              // LED on
+		//PORTB |= 1 << PB0;              // LED on
 
-		delayms( 500 );                 // delay ms
+		//delayms( 500 );                 // delay ms
 
-		PORTB &= ~( 1 << PB0 );         // LED off
+		//PORTB &= ~( 1 << PB0 );         // LED off
 
-		delayms( 500 );                 // delay ms
+		//delayms( 500 );                 // delay ms
+		
+		delayms( 50 );                 // delay ms
+		
+		
+		if (dir == 1)
+		{
+			vel += 10;
+			Set_Motor1_Velocity(vel);
+			if (vel >= 240)
+			{
+				dir = 0;
+			}
+		}
+		else
+		{
+			vel -= 10;
+			Set_Motor1_Velocity(vel);
+			if (vel <= 20)
+			{
+				dir = 1;
+			}
+		}		
 		
 	}
 	

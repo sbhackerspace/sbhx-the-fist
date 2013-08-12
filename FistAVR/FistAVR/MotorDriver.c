@@ -20,6 +20,8 @@ void Init_PWM0()
 
 	// Set the clock source of the timer to be
 	// the I/O clock/8  prescaling
+	// TODO: set this to clock/1. This will push the 
+	//  frequency above audible range.
 	TCCR0B &= ~(1<<CS00);
 	TCCR0B |= (1<<CS01);
 	TCCR0B &= ~(1<<CS02);
@@ -37,14 +39,15 @@ void Init_PWM0()
 void Init_Motor1()
 {
 	// Set both the pwm pin and the direction pin to be outputs
-	DDRD |= ( (1<<DDD4) | (1<<DDD5) );
+	DDRB |= ( (1<<DDB7) | (1<<DDB7) );
 
-	// Enable the PWM output for timer 0 comare register A
-	TCCR0A &= ~(1<<COM0B0);
-	TCCR0A |= (1<<COM0B1);
+	// Enable the PWM output for timer 0 compare register A
+	TCCR0A &= ~(1<<COM0A0);
+	TCCR0A |= (1<<COM0A1);
 
 	// Enable the overflow interrupt
-	TIMSK1 |= (1<<TOIE1);
+	// TODO: try disabling this. it may not be needed.
+	TIMSK0 |= (1<<TOIE0);
 }
 
 void Set_Motor1_Velocity( int16_t  velocity)
@@ -59,20 +62,20 @@ void Set_Motor1_Velocity( int16_t  velocity)
 	if(velocity >= 0)
 	{
 		// Set the data direction bit
-		PORTD |= (1<<PD4);
+		//PORTD |= (1<<PD4);
 
 		// Set the velocity
-		OCR0B = velocity;
+		OCR0A = velocity;
 	}
 	else
 	{
 		//set the data direction bit
-		PORTD &= ~(1<<PD4);
+		//PORTD &= ~(1<<PD4);
 
 		// Make the velocity positive
 		velocity = -velocity;
 
 		// Set the velocity
-		OCR0B = velocity;
+		OCR0A = velocity;
 	}
 }
