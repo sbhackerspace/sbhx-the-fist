@@ -39,15 +39,11 @@ void Init_PWM0()
 void Init_Motor1()
 {
 	// Set both the pwm pin and the direction pin to be outputs
-	DDRB |= ( (1<<DDB7) | (1<<DDB7) );
+	DDRB |=  (1<<7);
 
 	// Enable the PWM output for timer 0 compare register A
 	TCCR0A &= ~(1<<COM0A0);
 	TCCR0A |= (1<<COM0A1);
-
-	// Enable the overflow interrupt
-	// TODO: try disabling this. it may not be needed.
-	TIMSK0 |= (1<<TOIE0);
 }
 
 void Set_Motor1_Velocity( int16_t  velocity)
