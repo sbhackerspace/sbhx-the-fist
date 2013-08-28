@@ -2,7 +2,7 @@
 #define ENCODER_READER_H_
 
 
-int read_encoder(void);
+int8_t read_encoder(uint8_t newEncoderPins, uint8_t oldEncoderPins);
 
 //extern volatile int16_t encoder_value;
 

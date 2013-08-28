@@ -25,7 +25,7 @@ void delayms( uint16_t millis )
 	}
 }
 
-extern volatile int16_t encoder_value;
+extern volatile int16_t encoder_value0;
 
 
 int main(void)
@@ -99,9 +99,9 @@ int main(void)
 		//Set_Motor1_Velocity(100);
 		delayms( 50 );                 // delay ms
 		
-		if (encoder_value != 0)
+		if (encoder_value0 != 0)
         {
-            Set_Motor1_Velocity(encoder_value);
+            Set_Motor1_Velocity(encoder_value0);
         }
         else
         {            

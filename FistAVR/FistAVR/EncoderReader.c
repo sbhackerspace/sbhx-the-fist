@@ -7,50 +7,57 @@
 
 
 
-int read_encoder(void)
+int8_t read_encoder( uint8_t newEncoderPins, uint8_t oldEncoderPins)
 {
-	//int button0 = 0;
-	//int button1 = 0;
-//
-	//button0 = PINB & (1<<PB0);
-	//button1 = PINB & (1<<PB1);
-	//
+	switch(oldEncoderPins) //Possible states: 00 01 11 10
+	{
+		case(0): // 00
+		{
+			if(newEncoderPins == (1<<0))			{ return 1; }//10->00
+			if(newEncoderPins == (1<<1))			{ return -1; }//01->00
+			break;
+		}
+		case((1<<1)): // 01
+		{
+			if(newEncoderPins == 0)					{ return 1; }//00->01
+			if(newEncoderPins == ((1<<0)|(1<<1)))	{ return -1; }//11->01
+			break;
+		}
+		case(((1<<0)|(1<<1))): // 11
+		{
+			if(newEncoderPins == (1<<1))			{ return 1; }//01->11
+			if(newEncoderPins == (1<<0))			{ return -1; }//10->11
+			break;
+		}
+		case((1<<0)): // 10
+		{
+			if(newEncoderPins == ((1<<0)|(1<<1)))	{ return 1; }//11->10
+			if(newEncoderPins == 0)					{ return -1; }//00->10
+			break;
+		}
+	}
+	
 	return 0;
-	
-	
 }
 
 
-volatile int16_t encoder_value = 0;
-volatile uint8_t oldEncoderPins = -1; //this large value will cause the variable to be initialized only in the ISR
+volatile int16_t encoder_value0 = 0;
+volatile uint8_t oldEncoderPins0 = -1; //this large value will cause the variable to be initialized only in the ISR
 
 
 ISR(PCINT0_vect)
 {
 	// ISR code to execute here
 
-	uint8_t newEncoderPins = PINB & (1<<PB0 | 1<<PB1); //mask pins to get 0 and 1 values
+	uint8_t newEncoderPins0 = PINB & (1<<PB0 | 1<<PB1); //mask pins to get 0 and 1 values
 	
-	switch(oldEncoderPins) { //Possible states: 00 01 11 10
-		case(0): // 00
-		if(newEncoderPins == (1<<0)) { ++encoder_value; }//10->00
-		if(newEncoderPins == (1<<1)) { --encoder_value; }//01->00
-		break;
-		case((1<<1)): // 01
-		if(newEncoderPins == 0) { ++encoder_value; }//00->01
-		if(newEncoderPins == ((1<<0)|(1<<1))) { --encoder_value; }//11->01
-		break;
-		case(((1<<0)|(1<<1))): // 11
-		if(newEncoderPins == (1<<1)) { ++encoder_value; }//01->11
-		if(newEncoderPins == (1<<0)) { --encoder_value; }//10->11
-		break;
-		case((1<<0)): // 10
-		if(newEncoderPins == ((1<<0)|(1<<1))) { ++encoder_value; }//11->10
-		if(newEncoderPins == 0) { --encoder_value; }//00->10
-		break;
+	if (oldEncoderPins0 != newEncoderPins0)
+	{
+		encoder_value0 += read_encoder(newEncoderPins0, oldEncoderPins0);
+		oldEncoderPins0 = newEncoderPins0;
 	}
+	
 		
-	oldEncoderPins = newEncoderPins;	
 	
 	
 }
