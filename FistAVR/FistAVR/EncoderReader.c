@@ -40,24 +40,39 @@ int8_t read_encoder( uint8_t newEncoderPins, uint8_t oldEncoderPins)
 	return 0;
 }
 
+volatile int16_t encoder_value[4] = {0, 0, 0, 0};
 
-volatile int16_t encoder_value0 = 0;
-volatile uint8_t oldEncoderPins0 = -1; //this large value will cause the variable to be initialized only in the ISR
-
+//These large values will cause the variables to be initialized in the ISR on the first run.
+volatile uint8_t oldEncoderPins[4] = {-1, -1, -1, -1};
 
 ISR(PCINT0_vect)
 {
-	// ISR code to execute here
-
-	uint8_t newEncoderPins0 = PINB & (1<<PB0 | 1<<PB1); //mask pins to get 0 and 1 values
+	// Read the encoder pins
+	const uint8_t encoderPins = PINB;
 	
-	if (oldEncoderPins0 != newEncoderPins0)
+	uint8_t i;
+	for (i=0; i<4; ++i)
 	{
-		encoder_value0 += read_encoder(newEncoderPins0, oldEncoderPins0);
-		oldEncoderPins0 = newEncoderPins0;
+		// 0x03 is a binary mask that gets two bits 0000 00XX
+		const uint8_t shiftBits = (i<<1); // i*2
+		
+		// create mask that will extract the two pins we want
+		const uint8_t mask = ((0x03) << shiftBits);
+		
+		// Apply the mask
+		const uint8_t maskedEncoderPins = (encoderPins & mask);
+		
+		// Shift the pins so they are the bottom two bits.
+		const uint8_t newEncoderPins = (maskedEncoderPins >> shiftBits);
+		
+		// If the values have changed, update the encoder counts and old pin values
+		if (oldEncoderPins[i] != newEncoderPins)
+		{
+			encoder_value[i] += read_encoder(newEncoderPins, oldEncoderPins[i]);
+			oldEncoderPins[i] = newEncoderPins;
+		}
 	}
 	
-		
 	
 	
 }
