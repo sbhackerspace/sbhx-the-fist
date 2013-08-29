@@ -4,7 +4,7 @@
 void Init_Encoders();
 	
 
-int8_t read_encoder(uint8_t newEncoderPins, uint8_t oldEncoderPins);
+int8_t get_encoder_delta(uint8_t newEncoderPins, uint8_t oldEncoderPins);
 
 //extern volatile int16_t encoder_value;
 
