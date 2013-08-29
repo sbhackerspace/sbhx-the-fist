@@ -50,29 +50,23 @@ ISR(PCINT0_vect)
 	// Read the encoder pins
 	const uint8_t encoderPins = PINB;
 	
-	uint8_t i;
-	for (i=0; i<4; ++i)
+	const uint8_t encoderMask0 = 0x03; //0000 0011
+	const uint8_t encoderMask1 = 0x0C; //0000 1100
+		
+	const uint8_t encoderPins0 = encoderPins & encoderMask0;
+	const uint8_t encoderPins1 = (encoderPins & encoderMask1) >> 2; // moves bits to rightmost for the encoder function
+	
+	// If the values have changed, update the encoder counts and old pin values
+	if (oldEncoderPins[0] != encoderPins0)
 	{
-		// 0x03 is a binary mask that gets two bits 0000 00XX
-		const uint8_t shiftBits = (i<<1); // i*2
-		
-		// create mask that will extract the two pins we want
-		const uint8_t mask = ((0x03) << shiftBits);
-		
-		// Apply the mask
-		const uint8_t maskedEncoderPins = (encoderPins & mask);
-		
-		// Shift the pins so they are the bottom two bits.
-		const uint8_t newEncoderPins = (maskedEncoderPins >> shiftBits);
-		
-		// If the values have changed, update the encoder counts and old pin values
-		if (oldEncoderPins[i] != newEncoderPins)
-		{
-			encoder_value[i] += read_encoder(newEncoderPins, oldEncoderPins[i]);
-			oldEncoderPins[i] = newEncoderPins;
-		}
+		encoder_value[0] += read_encoder(encoderPins0, oldEncoderPins[0]);
+		oldEncoderPins[0] = encoderPins0;
+	}	
+	
+	if (oldEncoderPins[1] != encoderPins1)
+	{
+		encoder_value[1] += read_encoder(encoderPins1, oldEncoderPins[1]);
+		oldEncoderPins[1] = encoderPins1;
 	}
-	
-	
 	
 }
