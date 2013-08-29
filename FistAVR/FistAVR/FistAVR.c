@@ -32,10 +32,10 @@ int main(void)
 {
 	Init_PWM0();
 	Init_Motor1();
-
+	Init_Encoders();
     
-	PCICR |= 1<<PCIE0; // Enable the pin change interrupts
-	PCMSK0 |= 1<<PCINT0 | 1<<PCINT1; // Enable specific pin change interrupts
+	//PCICR |= 1<<PCIE0; // Enable the pin change interrupts
+	//PCMSK0 |= 1<<PCINT0 | 1<<PCINT1; // Enable specific pin change interrupts
 
 	sei(); // Enable Global Interrupts
 	
@@ -99,9 +99,9 @@ int main(void)
 		//Set_Motor1_Velocity(100);
 		delayms( 50 );                 // delay ms
 		
-		if (encoder_value[1] != 0)
+		if (encoder_value[3] != 0)
         {
-            Set_Motor1_Velocity(encoder_value[1]);
+            Set_Motor1_Velocity(encoder_value[3]);
         }
         else
         {            
