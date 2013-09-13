@@ -30,8 +30,7 @@ extern volatile int16_t encoder_value[];
 
 int main(void)
 {
-	Init_PWM0();
-	Init_Motor1();
+	Init_PWM();
 	Init_Encoders();
     
 	//PCICR |= 1<<PCIE0; // Enable the pin change interrupts
@@ -39,7 +38,7 @@ int main(void)
 
 	sei(); // Enable Global Interrupts
 	
-    Set_Motor1_Velocity(0);
+    Set_Motor_Velocity(0,0);
     
 	
     
@@ -101,14 +100,14 @@ int main(void)
 		
 		if (encoder_value[3] != 0)
         {
-            Set_Motor1_Velocity(encoder_value[3]);
+            Set_Motor_Velocity(0, encoder_value[2]);
         }
         else
         {            
 			if (dir == 1)
 			{
 				vel += 10;
-				Set_Motor1_Velocity(vel);
+				Set_Motor_Velocity(0, vel);
 				if (vel >= 240)
 				{
 					dir = 0;
@@ -117,7 +116,7 @@ int main(void)
 			else
 			{
 				vel -= 10;
-				Set_Motor1_Velocity(vel);
+				Set_Motor_Velocity(0, vel);
 				if (vel <= 20)
 				{
 					dir = 1;

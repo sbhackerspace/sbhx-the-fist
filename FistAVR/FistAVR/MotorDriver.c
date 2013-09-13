@@ -11,7 +11,7 @@ static volatile  int16_t 	pour_pwm = 160;
 
 
 //This initializes timer 0 (8 bits) to phase correct PWM
-void Init_PWM0()
+void Init_PWM()
 {
 	// Set timer 0 to wave generation mode phase correct PWM
 	TCCR0A |= (1<<WGM00);
@@ -30,24 +30,29 @@ void Init_PWM0()
 	OCR0A = 0;
 	OCR0B = 0;
 
-	// Disable both PWM outputs
-	TCCR0A &= ~( (1<<COM0A0) | (1<<COM0A1) );
-	TCCR0A &= ~( (1<<COM0B0) | (1<<COM0B1) );
+	// Enable the PWM output
+	TCCR0A &= ~(1<<COM0A0); // timer 0 output A
+	TCCR0A |= (1<<COM0A1);
+	
+	TCCR0A &= ~(1<<COM0B0); // timer 0 output B
+	TCCR0A |= (1<<COM0B1);
+
+	// Set both the pwm pin and the direction pin to be outputs
+	DDRB |=  (1<<7); // OC0A
+	DDRD |=  (1<<0); // OC0B
+	DDRB |=  (1<<5); // OC1A
+	DDRB |=  (1<<6); // OC1B
 	
 }
 
-void Init_Motor1()
+void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
 {
-	// Set both the pwm pin and the direction pin to be outputs
-	DDRB |=  (1<<7);
-
-	// Enable the PWM output for timer 0 compare register A
-	TCCR0A &= ~(1<<COM0A0);
-	TCCR0A |= (1<<COM0A1);
-}
-
-void Set_Motor1_Velocity( int16_t  velocity)
-{
+	
+	// We only have 4 motors
+	if (motor_number > 3)
+	{
+		return;
+	}
 
 	// Max velocity is 255, we are going to limit it to 254
 	if(velocity > 254)
