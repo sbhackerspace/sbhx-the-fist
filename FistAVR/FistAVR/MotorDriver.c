@@ -37,11 +37,17 @@ void Init_PWM()
 	TCCR0A &= ~(1<<COM0B0); // timer 0 output B
 	TCCR0A |= (1<<COM0B1);
 
+
+	// TODO: Setup timer 1
+
+
 	// Set both the pwm pin and the direction pin to be outputs
 	DDRB |=  (1<<7); // OC0A
 	DDRD |=  (1<<0); // OC0B
 	DDRB |=  (1<<5); // OC1A
 	DDRB |=  (1<<6); // OC1B
+	
+	// TODO: choose then enable the direction bits
 	
 }
 
@@ -54,29 +60,87 @@ void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
 		return;
 	}
 
+
+	uint8_t reversing = (velocity < 0);
+
+	// make the velocity have a positive value
+	if (reversing)
+	{
+		velocity = -velocity; 
+	}
+
 	// Max velocity is 255, we are going to limit it to 254
 	if(velocity > 254)
-	velocity = 254;
-	else if (velocity < -254)
-	velocity = -254;
-
-	if(velocity >= 0)
 	{
-		// Set the data direction bit
-		//PORTD |= (1<<PD4);
-
-		// Set the velocity
-		OCR0A = velocity;
+		velocity = 254;
 	}
-	else
+	
+	switch (motor_number)
 	{
-		//set the data direction bit
-		//PORTD &= ~(1<<PD4);
+		case 0:
+		{
+			// Set the data direction bit
+			if (reversing)
+			{
+				//PORTD |= (1<<PD4);
+			} 
+			else
+			{
+				//PORTD &= ~(1<<PD4);
+			}
 
-		// Make the velocity positive
-		velocity = -velocity;
+			// Set the duty cycle
+			OCR0A = velocity;
+			break;
+		}
+		case 1:
+		{
+			// Set the data direction bit
+			if (reversing)
+			{
+				//PORTD |= (1<<PD4);
+			}
+			else
+			{
+				//PORTD &= ~(1<<PD4);
+			}
 
-		// Set the velocity
-		OCR0A = velocity;
+			// Set the duty cycle
+			OCR0B = velocity;
+			break;
+		}
+		case 2:
+		{
+			// Set the data direction bit
+			if (reversing)
+			{
+				//PORTD |= (1<<PD4);
+			}
+			else
+			{
+				//PORTD &= ~(1<<PD4);
+			}
+
+			// Set the duty cycle
+			OCR1AL = velocity;
+			break;
+		}
+		case 3:
+		{
+			// Set the data direction bit
+			if (reversing)
+			{
+				//PORTD |= (1<<PD4);
+			}
+			else
+			{
+				//PORTD &= ~(1<<PD4);
+			}
+
+			// Set the duty cycle
+			OCR1BL = velocity;
+			break;
+		}
 	}
 }
+
