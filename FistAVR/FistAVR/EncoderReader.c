@@ -14,10 +14,10 @@ void Init_Encoders()
 {
 	
 	PCICR |= 1<<PCIE0; // Enable the pin change interrupts
-	PCMSK0 |= 1<<PCINT0 | 1<<PCINT1 | 1<<PCINT2 | 1<<PCINT3; // Enable specific pin change interrupts
+	PCMSK0 |= 1<<PCINT0 | 1<<PCINT1 | 1<<PCINT2 | 1<<PCINT3 | 1<<PCINT4; // Enable specific pin change interrupts
 	
-	EICRA |= 1<<ISC00 | 1<<ISC10 | 1<<ISC20 | 1<<ISC30; // Configure the external interrupts to trigger on all edges
-	EIMSK |= 1<<INT0 | 1<<INT1 | 1<<INT2 | 1<<INT3; // Enable the external interrupts
+	EICRA |= 1<<ISC10 | 1<<ISC20 | 1<<ISC30; // Configure the external interrupts to trigger on all edges
+	EIMSK |= 1<<INT1 | 1<<INT2 | 1<<INT3; // Enable the external interrupts
 	
 	
 	// Reset the encoder values to zero

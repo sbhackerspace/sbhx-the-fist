@@ -98,7 +98,7 @@ int main(void)
 		//Set_Motor1_Velocity(100);
 		delayms( 50 );                 // delay ms
 		
-		if (encoder_value[3] != 0)
+		if (encoder_value[2] != 0)
         {
             Set_Motor_Velocity(0, encoder_value[2]);
         }
