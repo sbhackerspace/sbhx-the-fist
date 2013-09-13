@@ -66,15 +66,31 @@ int8_t get_encoder_delta( uint8_t newEncoderPins, uint8_t oldEncoderPins)
 	return 0;
 }
 
-void read_encoder(uint8_t encoderNumber, uint8_t rawEncoderPins, uint8_t encoderMask, uint8_t shitAmmount)
+void read_encoder(uint8_t encoderNumber, uint8_t rawEncoderPins, uint8_t encoderMask, uint8_t shiftAmount)
 {
-	const uint8_t encoderPins = (rawEncoderPins & encoderMask) >> shitAmmount; // mask and move bits to rightmost for the encoder function
+	const uint8_t encoderPins = (rawEncoderPins & encoderMask) >> shiftAmount; // mask and move bits to rightmost for the encoder function
 	
 	// If the values have changed, update the encoder counts and old pin values
 	if (oldEncoderPins[encoderNumber] != encoderPins)
 	{
 		encoder_value[encoderNumber] += get_encoder_delta(encoderPins, oldEncoderPins[encoderNumber]);
 		oldEncoderPins[encoderNumber] = encoderPins;
+	}
+}
+
+void read_encoder2()
+{
+	const uint8_t rawEncoderPinsB = PINB; //pin B4
+	const uint8_t rawEncoderPinsD = PIND; //pin D1
+	
+	uint8_t encoderPins = 0;
+	encoderPins |= ((rawEncoderPinsB & 0x10) >> 4);
+	encoderPins |= ((rawEncoderPinsD & 0x02) >> 0);
+	
+	if (oldEncoderPins[2] != encoderPins)
+	{
+		encoder_value[2] += get_encoder_delta(encoderPins, oldEncoderPins[2]);
+		oldEncoderPins[2] = encoderPins;
 	}
 }
 
@@ -98,15 +114,8 @@ ISR(PCINT0_vect) // encoders 0A, 0B, 1A, 1B
 	
 	read_encoder(0, rawEncoderPins, encoderMask0, shiftAmount0);
 	read_encoder(1, rawEncoderPins, encoderMask1, shiftAmount1);
+	read_encoder2();
 }
-
-ISR(INT0_vect) // encoder 2A
-{
-	// Read the encoder pins
-	const uint8_t rawEncoderPins = PIND;
-	
-	read_encoder(2, rawEncoderPins, encoderMask2, shiftAmount2);
-};
 
 ISR(INT1_vect) // encoder 2B
 {
@@ -114,6 +123,7 @@ ISR(INT1_vect) // encoder 2B
 	const uint8_t rawEncoderPins = PIND;
 	
 	read_encoder(2, rawEncoderPins, encoderMask2, shiftAmount2);
+	read_encoder2();
 }
 
 ISR(INT2_vect) // encoder 3A
