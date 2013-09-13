@@ -138,7 +138,7 @@ int main(void)
                 
                 string[i] = '\r';
                 string[i+1] = '\n';
-                CDC_Device_SendString(&VirtualSerial_CDC_Interface, string);
+                fprintf(&USBSerialStream, string);
                 i = 0;
                 memset(str, '\0', STRING_LENGTH);
                 if(strncmp(compare, "led", 3) == 0){
@@ -152,7 +152,8 @@ int main(void)
             string[i] = byte;
             i++;
             if(i >= STRING_LENGTH - 4){
-                CDC_Device_SendString(&VirtualSerial_CDC_Interface, "Overflow\r\n");
+                fprintf(&USBSerialStream, "Overflow\r\n");
+                
                 i = 0;
                 memset(str, '\0', STRING_LENGTH);
                 //strcpy(str, "echo: ");
