@@ -36,6 +36,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../EncoderReader.c \
 ../FistAVR.c \
 ../MotorDriver.c
 
@@ -47,18 +48,22 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+EncoderReader.o \
 FistAVR.o \
 MotorDriver.o
 
 OBJS_AS_ARGS +=  \
+EncoderReader.o \
 FistAVR.o \
 MotorDriver.o
 
 C_DEPS +=  \
+EncoderReader.d \
 FistAVR.d \
 MotorDriver.d
 
 C_DEPS_AS_ARGS +=  \
+EncoderReader.d \
 FistAVR.d \
 MotorDriver.d
 
@@ -73,6 +78,8 @@ OUTPUT_FILE_DEP:= ./makedep.mk
 LIB_DEP+= 
 
 # AVR32/GNU C Compiler
+
+
 
 
 
