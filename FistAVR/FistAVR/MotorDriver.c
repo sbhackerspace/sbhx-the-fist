@@ -47,8 +47,12 @@ void Init_PWM()
 	DDRB |=  (1<<5); // OC1A
 	DDRB |=  (1<<6); // OC1B
 	
-	// TODO: choose then enable the direction bits
+	// TODO: Enable the direction pins
 	
+	DDRD |=  (1<<4); // Direction 0
+	DDRD |=  (1<<5); // Direction 1
+	DDRD |=  (1<<6); // Direction 2
+	DDRD |=  (1<<7); // Direction 3
 }
 
 void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
@@ -82,11 +86,11 @@ void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
 			// Set the data direction bit
 			if (reversing)
 			{
-				//PORTD |= (1<<PD4);
+				PORTD |= (1<<4);
 			} 
 			else
 			{
-				//PORTD &= ~(1<<PD4);
+				PORTD &= ~(1<<4);
 			}
 
 			// Set the duty cycle
@@ -98,11 +102,11 @@ void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
 			// Set the data direction bit
 			if (reversing)
 			{
-				//PORTD |= (1<<PD4);
+				PORTD |= (1<<5);
 			}
 			else
 			{
-				//PORTD &= ~(1<<PD4);
+				PORTD &= ~(1<<5);
 			}
 
 			// Set the duty cycle
@@ -114,11 +118,11 @@ void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
 			// Set the data direction bit
 			if (reversing)
 			{
-				//PORTD |= (1<<PD4);
+				PORTD |= (1<<6);
 			}
 			else
 			{
-				//PORTD &= ~(1<<PD4);
+				PORTD &= ~(1<<6);
 			}
 
 			// Set the duty cycle
@@ -130,13 +134,13 @@ void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
 			// Set the data direction bit
 			if (reversing)
 			{
-				//PORTD |= (1<<PD4);
+				PORTD |= (1<<7);
 			}
 			else
 			{
-				//PORTD &= ~(1<<PD4);
+				PORTD &= ~(1<<7);
 			}
-
+			
 			// Set the duty cycle
 			OCR1BL = velocity;
 			break;
