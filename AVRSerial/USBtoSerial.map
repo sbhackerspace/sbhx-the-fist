@@ -1,0 +1,1391 @@
+Archive member included because of file (symbol)
+
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+                              USBtoSerial.o (__udivmodsi4)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+                              /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o (exit)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+                              USBtoSerial.o (__do_copy_data)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+                              USBtoSerial.o (__do_clear_bss)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                              ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o (memcpy_P)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcmp.o)
+                              ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o (memcmp)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                              ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o (memcpy)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memset.o)
+                              ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o (memset)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega32u4.o)
+                              ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o (__eerd_byte_m32u4)
+/usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+                              ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o (__eeupd_byte_m32u4)
+
+Allocating common symbols
+Common symbol       size              file
+
+USB_IsInitialized   0x1               ../../LUFA/Drivers/USB/Core/USBTask.o
+USB_Device_ConfigurationNumber
+                    0x1               ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+USB_Device_CurrentlySelfPowered
+                    0x1               ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+USB_ControlRequest  0x8               ../../LUFA/Drivers/USB/Core/USBTask.o
+USB_Device_RemoteWakeupEnabled
+                    0x1               ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+ .text          0x00000000        0x0 USBtoSerial.o
+ .text          0x00000000        0x0 Descriptors.o
+ .bss           0x00000000        0x0 Descriptors.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_ProcessHIDReport
+                0x00000000      0x77a ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_GetHIDReportItemInfo
+                0x00000000       0xc2 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_SetHIDReportItemInfo
+                0x00000000       0xd8 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_GetHIDReportSize
+                0x00000000       0x60 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .text.USB_Device_SendRemoteWakeup
+                0x00000000       0x2c ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Discard_Stream
+                0x00000000       0x8e ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Null_Stream
+                0x00000000       0x8e ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Stream_LE
+                0x00000000       0xa2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Stream_BE
+                0x00000000       0xb0 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_LE
+                0x00000000       0xa2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_BE
+                0x00000000       0xb0 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_LE
+                0x00000000       0xa6 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_BE
+                0x00000000       0xb2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_LE
+                0x00000000       0xa8 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_BE
+                0x00000000       0xb2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_LE
+                0x00000000       0xa8 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_BE
+                0x00000000       0xb2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_Stream_BE
+                0x00000000       0xc6 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_LE
+                0x00000000       0x98 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_BE
+                0x00000000       0x88 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_PStream_BE
+                0x00000000       0xc8 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_LE
+                0x00000000       0xe8 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_BE
+                0x00000000       0xf2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_LE
+                0x00000000       0xa2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_BE
+                0x00000000       0xa0 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text.Endpoint_ClearEndpoints
+                0x00000000       0x28 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .text.USB_Disable
+                0x00000000       0x34 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfType
+                0x00000000       0x4e ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeBefore
+                0x00000000       0x56 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeAfter
+                0x00000000       0x34 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorComp
+                0x00000000       0x8e ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/Events.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/Events.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .text.Audio_Device_ProcessControlRequest
+                0x00000000      0x318 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .text.Audio_Device_ConfigureEndpoints
+                0x00000000       0x30 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .text.Audio_Device_Event_Stub
+                0x00000000        0x2 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_SendString
+                0x00000000       0x46 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_SendData
+                0x00000000       0x3a ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_putchar
+                0x00000000       0x1e ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_BytesReceived
+                0x00000000       0x6c ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_getchar_Blocking
+                0x00000000       0x32 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_getchar
+                0x00000000       0x14 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_SendControlLineStateChange
+                0x00000000       0x8c ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_CreateStream
+                0x00000000       0x26 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text.CDC_Device_CreateBlockingStream
+                0x00000000       0x26 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .text.HID_Device_ProcessControlRequest
+                0x00000000      0x278 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .text.HID_Device_ConfigureEndpoints
+                0x00000000       0x34 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .text.HID_Device_USBTask
+                0x00000000      0x194 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .text.MS_Device_ProcessControlRequest
+                0x00000000       0x7e ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .text.MS_Device_ConfigureEndpoints
+                0x00000000       0x3c ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .text.MS_Device_USBTask
+                0x00000000      0x24e ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .text.MIDI_Device_ConfigureEndpoints
+                0x00000000       0x30 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .text.MIDI_Device_SendEventPacket
+                0x00000000       0x3a ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .text.MIDI_Device_Flush
+                0x00000000       0x3e ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .text.MIDI_Device_USBTask
+                0x00000000       0x1e ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .text.MIDI_Device_ReceiveEventPacket
+                0x00000000       0x44 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .text.RNDIS_Device_ProcessControlRequest
+                0x00000000      0x5ae ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .text.RNDIS_Device_ConfigureEndpoints
+                0x00000000       0x4e ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .text.RNDIS_Device_USBTask
+                0x00000000       0x86 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .text.RNDIS_Device_IsPacketReceived
+                0x00000000       0x2e ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .text.RNDIS_Device_ReadPacket
+                0x00000000       0xbe ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .text.RNDIS_Device_SendPacket
+                0x00000000       0xe0 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .progmem.data  0x00000000       0x6c ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+ .text          0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+ .bss           0x00000000        0x0 ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text.avr-libc
+                0x00000000       0x12 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcmp.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcmp.o)
+ .text.avr-libc
+                0x00000000       0x1a /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcmp.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text.avr-libc
+                0x00000000       0x12 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memset.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memset.o)
+ .text.avr-libc
+                0x00000000        0xe /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memset.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega32u4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega32u4.o)
+ .text.avr-libc
+                0x00000000       0x10 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega32u4.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+ .text.avr-libc
+                0x00000000       0x24 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+LOAD USBtoSerial.o
+LOAD Descriptors.o
+LOAD ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+LOAD ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+LOAD ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+LOAD ../../LUFA/Drivers/USB/Core/Events.o
+LOAD ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+LOAD ../../LUFA/Drivers/USB/Core/USBTask.o
+LOAD ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+LOAD ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+LOAD ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+LOAD ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+LOAD ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+LOAD ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+LOAD /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libm.a
+LOAD /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a
+LOAD /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a
+LOAD /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1090
+ *(.vectors)
+ .vectors       0x00000000       0xac /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x000000ac       0x9e Descriptors.o
+                0x000000ac                ProductString
+                0x000000dc                ManufacturerString
+                0x000000f6                LanguageString
+                0x000000fa                ConfigurationDescriptor
+                0x00000138                DeviceDescriptor
+                0x0000014a                . = ALIGN (0x2)
+                0x0000014a                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000014a        0x0 linker stubs
+ *(.trampolines*)
+                0x0000014a                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000014a                __ctors_start = .
+ *(.ctors)
+                0x0000014a                __ctors_end = .
+                0x0000014a                __dtors_start = .
+ *(.dtors)
+                0x0000014a                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000014a        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+                0x0000014a                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000014a        0xc /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000156       0x16 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+                0x00000156                __do_copy_data
+ .init4         0x0000016c       0x10 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+                0x0000016c                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000017c        0x4 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+ *(.init9)
+ *(.text)
+ .text          0x00000180        0x2 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+                0x00000180                __vector_42
+                0x00000180                __vector_22
+                0x00000180                __vector_28
+                0x00000180                __vector_1
+                0x00000180                __vector_32
+                0x00000180                __vector_34
+                0x00000180                __vector_24
+                0x00000180                __vector_12
+                0x00000180                __bad_interrupt
+                0x00000180                __vector_6
+                0x00000180                __vector_31
+                0x00000180                __vector_35
+                0x00000180                __vector_39
+                0x00000180                __vector_3
+                0x00000180                __vector_23
+                0x00000180                __vector_30
+                0x00000180                __vector_13
+                0x00000180                __vector_17
+                0x00000180                __vector_19
+                0x00000180                __vector_7
+                0x00000180                __vector_41
+                0x00000180                __vector_27
+                0x00000180                __vector_5
+                0x00000180                __vector_33
+                0x00000180                __vector_37
+                0x00000180                __vector_4
+                0x00000180                __vector_9
+                0x00000180                __vector_2
+                0x00000180                __vector_21
+                0x00000180                __vector_15
+                0x00000180                __vector_36
+                0x00000180                __vector_29
+                0x00000180                __vector_40
+                0x00000180                __vector_8
+                0x00000180                __vector_26
+                0x00000180                __vector_14
+                0x00000180                __vector_16
+                0x00000180                __vector_18
+                0x00000180                __vector_20
+                0x00000180                __vector_38
+                0x00000182                . = ALIGN (0x2)
+ *(.text.*)
+ .text.LEDs_SetAllLEDs
+                0x00000182        0xa USBtoSerial.o
+ .text.RingBuffer_Insert
+                0x0000018c       0x36 USBtoSerial.o
+ .text.RingBuffer_Remove
+                0x000001c2       0x32 USBtoSerial.o
+ .text.SetupHardware
+                0x000001f4       0x36 USBtoSerial.o
+                0x000001f4                SetupHardware
+ .text.startup.main
+                0x0000022a      0x112 USBtoSerial.o
+                0x0000022a                main
+ .text.EVENT_USB_Device_Connect
+                0x0000033c        0x4 USBtoSerial.o
+                0x0000033c                EVENT_USB_Device_Connect
+ .text.EVENT_USB_Device_Disconnect
+                0x00000340        0x4 USBtoSerial.o
+                0x00000340                EVENT_USB_Device_Disconnect
+ .text.EVENT_USB_Device_ConfigurationChanged
+                0x00000344       0x12 USBtoSerial.o
+                0x00000344                EVENT_USB_Device_ConfigurationChanged
+ .text.EVENT_USB_Device_ControlRequest
+                0x00000356        0x6 USBtoSerial.o
+                0x00000356                EVENT_USB_Device_ControlRequest
+ .text.__vector_25
+                0x0000035c       0x54 USBtoSerial.o
+                0x0000035c                __vector_25
+ .text.EVENT_CDC_Device_LineEncodingChanged
+                0x000003b0       0x86 USBtoSerial.o
+                0x000003b0                EVENT_CDC_Device_LineEncodingChanged
+ .text.CALLBACK_USB_GetDescriptor
+                0x00000436       0x58 Descriptors.o
+                0x00000436                CALLBACK_USB_GetDescriptor
+ .text.Endpoint_Write_Control_Stream_LE
+                0x0000048e       0xbe ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x0000048e                Endpoint_Write_Control_Stream_LE
+ .text.Endpoint_Write_Control_PStream_LE
+                0x0000054c       0xc2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x0000054c                Endpoint_Write_Control_PStream_LE
+ .text.Endpoint_ConfigureEndpoint_Prv
+                0x0000060e       0x6a ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x0000060e                Endpoint_ConfigureEndpoint_Prv
+ .text.Endpoint_ConfigureEndpointTable
+                0x00000678       0x78 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00000678                Endpoint_ConfigureEndpointTable
+ .text.Endpoint_ClearStatusStage
+                0x000006f0       0x3e ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x000006f0                Endpoint_ClearStatusStage
+ .text.Endpoint_WaitUntilReady
+                0x0000072e       0x64 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x0000072e                Endpoint_WaitUntilReady
+ .text.USB_ResetInterface
+                0x00000792       0x7e ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00000792                USB_ResetInterface
+ .text.USB_Init
+                0x00000810       0x20 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00000810                USB_Init
+ .text.USB_INT_DisableAllInterrupts
+                0x00000830       0x10 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000830                USB_INT_DisableAllInterrupts
+ .text.USB_INT_ClearAllInterrupts
+                0x00000840        0xa ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000840                USB_INT_ClearAllInterrupts
+ .text.__vector_10
+                0x0000084a      0x188 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000084a                __vector_10
+ .text.__vector_11
+                0x000009d2       0x76 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x000009d2                __vector_11
+ .text.USB_Device_ProcessControlRequest
+                0x00000a48      0x2c8 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x00000a48                USB_Device_ProcessControlRequest
+ .text.USB_Event_Stub
+                0x00000d10        0x2 ../../LUFA/Drivers/USB/Core/Events.o
+                0x00000d10                EVENT_USB_Device_WakeUp
+                0x00000d10                USB_Event_Stub
+                0x00000d10                EVENT_USB_Device_Suspend
+                0x00000d10                EVENT_USB_Device_StartOfFrame
+                0x00000d10                EVENT_USB_Device_Reset
+ .text.USB_USBTask
+                0x00000d12       0x36 ../../LUFA/Drivers/USB/Core/USBTask.o
+                0x00000d12                USB_USBTask
+ .text.CDC_Device_ProcessControlRequest
+                0x00000d48      0x158 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                0x00000d48                CDC_Device_ProcessControlRequest
+ .text.CDC_Device_ConfigureEndpoints
+                0x00000ea0       0x48 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                0x00000ea0                CDC_Device_ConfigureEndpoints
+ .text.CDC_Device_SendByte
+                0x00000ee8       0x4c ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                0x00000ee8                CDC_Device_SendByte
+ .text.CDC_Device_Flush
+                0x00000f34       0x68 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                0x00000f34                CDC_Device_Flush
+ .text.CDC_Device_USBTask
+                0x00000f9c       0x2e ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                0x00000f9c                CDC_Device_USBTask
+ .text.CDC_Device_ReceiveByte
+                0x00000fca       0x7c ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                0x00000fca                CDC_Device_ReceiveByte
+ .text.CDC_Device_Event_Stub
+                0x00001046        0x2 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                0x00001046                EVENT_CDC_Device_ControLineStateChanged
+                0x00001046                EVENT_CDC_Device_BreakSent
+                0x00001046                CDC_Device_Event_Stub
+ .text.libgcc   0x00001048       0x44 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+                0x00001048                __udivmodsi4
+                0x0000108c                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000108c        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+                0x0000108c                exit
+                0x0000108c                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000108c        0x4 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001090                _etext = .
+
+.data           0x00800100       0x2e load address 0x00001090
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+ .data          0x00800100       0x1d USBtoSerial.o
+                0x00800100                VirtualSerial_CDC_Interface
+ .data          0x0080011d        0x0 Descriptors.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/Events.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .data          0x0080011d        0x0 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .data          0x0080011d        0x8 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .data          0x00800125        0x0 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .data          0x00800125        0x0 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .data          0x00800125        0x0 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .data          0x00800125        0x8 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+ .data          0x0080012d        0x0 ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcmp.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memset.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega32u4.o)
+ .data          0x0080012d        0x0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080012e                . = ALIGN (0x2)
+ *fill*         0x0080012d        0x1 00
+                0x0080012e                _edata = .
+                0x0080012e                PROVIDE (__data_end, .)
+
+.bss            0x0080012e      0x124
+                0x0080012e                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080012e      0x118 USBtoSerial.o
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800246        0x3 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x00800246                USB_Device_ConfigurationNumber
+                0x00800247                USB_Device_CurrentlySelfPowered
+                0x00800248                USB_Device_RemoteWakeupEnabled
+ COMMON         0x00800249        0x9 ../../LUFA/Drivers/USB/Core/USBTask.o
+                0x00800249                USB_IsInitialized
+                0x0080024a                USB_ControlRequest
+                0x00800252                PROVIDE (__bss_end, .)
+                0x00001090                __data_load_start = LOADADDR (.data)
+                0x000010be                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800252        0x0
+                0x00800252                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800252                PROVIDE (__noinit_end, .)
+                0x00800252                _end = .
+                0x00800252                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0xa98
+ *(.stab)
+ .stab          0x00000000      0x6cc /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+ .stab          0x000006cc       0x84 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                 0x90 (size before relaxing)
+ .stab          0x00000750       0xb4 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcmp.o)
+                                 0xc0 (size before relaxing)
+ .stab          0x00000804       0x84 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                                 0x90 (size before relaxing)
+ .stab          0x00000888       0x6c /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memset.o)
+                                 0x78 (size before relaxing)
+ .stab          0x000008f4       0x90 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega32u4.o)
+                                 0x9c (size before relaxing)
+ .stab          0x00000984      0x114 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+                                0x120 (size before relaxing)
+
+.stabstr        0x00000000      0x2aa
+ *(.stabstr)
+ .stabstr       0x00000000      0x2aa /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x520
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x70 USBtoSerial.o
+ .debug_aranges
+                0x00000070       0x20 Descriptors.o
+ .debug_aranges
+                0x00000090       0x38 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_aranges
+                0x000000c8       0x20 ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_aranges
+                0x000000e8       0xc8 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_aranges
+                0x000001b0       0x40 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_aranges
+                0x000001f0       0x30 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_aranges
+                0x00000220       0x38 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_aranges
+                0x00000258       0x38 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_aranges
+                0x00000290       0x20 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_aranges
+                0x000002b0       0x20 ../../LUFA/Drivers/USB/Core/Events.o
+ .debug_aranges
+                0x000002d0       0x20 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .debug_aranges
+                0x000002f0       0x30 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .debug_aranges
+                0x00000320       0x98 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .debug_aranges
+                0x000003b8       0x30 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .debug_aranges
+                0x000003e8       0x30 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .debug_aranges
+                0x00000418       0x40 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .debug_aranges
+                0x00000458       0x48 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .debug_aranges
+                0x000004a0       0x20 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x000004c0       0x20 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .debug_aranges
+                0x000004e0       0x20 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000500       0x20 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x8b71
+ *(.debug_info)
+ .debug_info    0x00000000      0xb0b USBtoSerial.o
+ .debug_info    0x00000b0b      0x771 Descriptors.o
+ .debug_info    0x0000127c      0x6fa ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_info    0x00001976       0xca ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_info    0x00001a40     0x1553 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_info    0x00002f93      0x5f9 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_info    0x0000358c       0x5e ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_info    0x000035ea       0x5e ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_info    0x00003648       0x5e ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_info    0x000036a6      0x469 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_info    0x00003b0f      0x6e8 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_info    0x000041f7      0x37e ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_info    0x00004575      0x969 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_info    0x00004ede       0x77 ../../LUFA/Drivers/USB/Core/Events.o
+ .debug_info    0x00004f55       0x5e ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_info    0x00004fb3      0x237 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .debug_info    0x000051ea      0x57b ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .debug_info    0x00005765      0xc2d ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .debug_info    0x00006392      0x66c ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .debug_info    0x000069fe      0x7bc ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .debug_info    0x000071ba      0x4b3 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .debug_info    0x0000766d      0xeb6 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .debug_info    0x00008523       0x5e ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+ .debug_info    0x00008581       0x5e ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+ .debug_info    0x000085df       0x5e ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+ .debug_info    0x0000863d       0x5e ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+ .debug_info    0x0000869b       0x5e ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+ .debug_info    0x000086f9       0x5e ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+ .debug_info    0x00008757       0x5e ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+ .debug_info    0x000087b5       0x5e ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+ .debug_info    0x00008813       0x5e ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+ .debug_info    0x00008871       0xc0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_info    0x00008931       0xc0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .debug_info    0x000089f1       0xc0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .debug_info    0x00008ab1       0xc0 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x21d0
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x32e USBtoSerial.o
+ .debug_abbrev  0x0000032e      0x144 Descriptors.o
+ .debug_abbrev  0x00000472      0x1ec ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_abbrev  0x0000065e       0x7d ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_abbrev  0x000006db      0x1c2 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_abbrev  0x0000089d      0x207 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_abbrev  0x00000aa4       0x2a ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_abbrev  0x00000ace       0x2a ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_abbrev  0x00000af8       0x2a ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_abbrev  0x00000b22      0x144 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_abbrev  0x00000c66      0x1e2 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_abbrev  0x00000e48      0x148 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_abbrev  0x00000f90      0x204 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_abbrev  0x00001194       0x41 ../../LUFA/Drivers/USB/Core/Events.o
+ .debug_abbrev  0x000011d5       0x2a ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_abbrev  0x000011ff      0x14b ../../LUFA/Drivers/USB/Core/USBTask.o
+ .debug_abbrev  0x0000134a      0x16f ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .debug_abbrev  0x000014b9      0x34a ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .debug_abbrev  0x00001803      0x1b5 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .debug_abbrev  0x000019b8      0x205 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .debug_abbrev  0x00001bbd      0x185 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .debug_abbrev  0x00001d42      0x2c4 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .debug_abbrev  0x00002006       0x2a ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+ .debug_abbrev  0x00002030       0x2a ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+ .debug_abbrev  0x0000205a       0x2a ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+ .debug_abbrev  0x00002084       0x2a ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+ .debug_abbrev  0x000020ae       0x2a ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+ .debug_abbrev  0x000020d8       0x2a ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+ .debug_abbrev  0x00002102       0x2a ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+ .debug_abbrev  0x0000212c       0x2a ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+ .debug_abbrev  0x00002156       0x2a ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+ .debug_abbrev  0x00002180       0x14 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x00002194       0x14 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .debug_abbrev  0x000021a8       0x14 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .debug_abbrev  0x000021bc       0x14 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+
+.debug_line     0x00000000     0x3ea5
+ *(.debug_line)
+ .debug_line    0x00000000      0x513 USBtoSerial.o
+ .debug_line    0x00000513      0x189 Descriptors.o
+ .debug_line    0x0000069c      0x26f ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_line    0x0000090b      0x11f ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_line    0x00000a2a      0xc19 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_line    0x00001643      0x365 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_line    0x000019a8       0x1a ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_line    0x000019c2       0x1a ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_line    0x000019dc       0x1a ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_line    0x000019f6      0x254 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_line    0x00001c4a      0x3da ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_line    0x00002024      0x187 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_line    0x000021ab      0x324 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_line    0x000024cf       0x52 ../../LUFA/Drivers/USB/Core/Events.o
+ .debug_line    0x00002521       0x1a ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_line    0x0000253b      0x153 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .debug_line    0x0000268e      0x2f0 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .debug_line    0x0000297e      0x56e ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .debug_line    0x00002eec      0x364 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .debug_line    0x00003250      0x36e ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .debug_line    0x000035be      0x298 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .debug_line    0x00003856      0x3c6 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+ .debug_line    0x00003c1c       0x1a ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+ .debug_line    0x00003c36       0x1a ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+ .debug_line    0x00003c50       0x1a ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+ .debug_line    0x00003c6a       0x1a ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+ .debug_line    0x00003c84       0x1a ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+ .debug_line    0x00003c9e       0x1a ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+ .debug_line    0x00003cb8       0x1a ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+ .debug_line    0x00003cd2       0x1a ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+ .debug_line    0x00003cec       0x1a ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+ .debug_line    0x00003d06       0x7c /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_line    0x00003d82       0x5c /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+ .debug_line    0x00003dde       0x65 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+ .debug_line    0x00003e43       0x62 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+
+.debug_frame    0x00000000      0xe70
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x114 USBtoSerial.o
+ .debug_frame   0x00000114       0x24 Descriptors.o
+ .debug_frame   0x00000138      0x110 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_frame   0x00000248       0x24 ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_frame   0x0000026c      0x42c ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_frame   0x00000698       0x78 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_frame   0x00000710       0x58 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_frame   0x00000768       0xe8 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_frame   0x00000850       0xbc ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_frame   0x0000090c       0x38 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_frame   0x00000944       0x24 ../../LUFA/Drivers/USB/Core/Events.o
+ .debug_frame   0x00000968       0x2c ../../LUFA/Drivers/USB/Core/USBTask.o
+ .debug_frame   0x00000994       0xa8 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .debug_frame   0x00000a3c      0x158 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .debug_frame   0x00000b94       0xf4 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .debug_frame   0x00000c88       0x80 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .debug_frame   0x00000d08       0x70 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .debug_frame   0x00000d78       0xf8 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+
+.debug_str      0x00000000     0x3a82
+ *(.debug_str)
+ .debug_str     0x00000000      0x76d USBtoSerial.o
+                                0x7fa (size before relaxing)
+ .debug_str     0x0000076d      0x8ba Descriptors.o
+                                0x9f9 (size before relaxing)
+ .debug_str     0x00001027      0x47c ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+                                0x5d9 (size before relaxing)
+ .debug_str     0x000014a3       0x77 ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                                0x13c (size before relaxing)
+ .debug_str     0x0000151a      0x592 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                0x752 (size before relaxing)
+ .debug_str     0x00001aac      0x212 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                0x54e (size before relaxing)
+ .debug_str     0x00001cbe       0x2d ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+                                 0xe4 (size before relaxing)
+ .debug_str     0x00001ceb       0x33 ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+                                 0xea (size before relaxing)
+ .debug_str     0x00001d1e       0x2d ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+                                 0xe4 (size before relaxing)
+ .debug_str     0x00001d4b      0x24d ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                0x436 (size before relaxing)
+ .debug_str     0x00001f98      0x126 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                0x431 (size before relaxing)
+ .debug_str     0x000020be      0x227 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+                                0x324 (size before relaxing)
+ .debug_str     0x000022e5      0x3b2 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                0x842 (size before relaxing)
+ .debug_str     0x00002697       0x34 ../../LUFA/Drivers/USB/Core/Events.o
+                                 0xeb (size before relaxing)
+ .debug_str     0x000026cb       0x2e ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+                                 0xe5 (size before relaxing)
+ .debug_str     0x000026f9       0x4e ../../LUFA/Drivers/USB/Core/USBTask.o
+                                0x292 (size before relaxing)
+ .debug_str     0x00002747      0x239 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+                                0x512 (size before relaxing)
+ .debug_str     0x00002980      0x2fa ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                0x8c6 (size before relaxing)
+ .debug_str     0x00002c7a      0x1ed ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                0x541 (size before relaxing)
+ .debug_str     0x00002e67      0x23d ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+                                0x6a2 (size before relaxing)
+ .debug_str     0x000030a4      0x118 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+                                0x529 (size before relaxing)
+ .debug_str     0x000031bc      0x6e8 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                0xbda (size before relaxing)
+ .debug_str     0x000038a4       0x3e ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+                                 0xf5 (size before relaxing)
+ .debug_str     0x000038e2       0x33 ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+                                 0xea (size before relaxing)
+ .debug_str     0x00003915       0x31 ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x00003946       0x31 ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x00003977       0x39 ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+                                 0xf0 (size before relaxing)
+ .debug_str     0x000039b0       0x32 ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+                                 0xe9 (size before relaxing)
+ .debug_str     0x000039e2       0x35 ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+                                 0xec (size before relaxing)
+ .debug_str     0x00003a17       0x33 ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+                                 0xea (size before relaxing)
+ .debug_str     0x00003a4a       0x38 ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+                                 0xef (size before relaxing)
+
+.debug_loc      0x00000000     0x53bb
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x33e USBtoSerial.o
+ .debug_loc     0x0000033e      0x142 Descriptors.o
+ .debug_loc     0x00000480      0xb47 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_loc     0x00000fc7     0x1c42 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_loc     0x00002c09      0x361 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_loc     0x00002f6a       0x49 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_loc     0x00002fb3      0x333 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_loc     0x000032e6      0x433 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_loc     0x00003719      0x284 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_loc     0x0000399d       0x49 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .debug_loc     0x000039e6      0x286 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .debug_loc     0x00003c6c      0x634 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .debug_loc     0x000042a0      0x45b ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .debug_loc     0x000046fb      0x22c ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .debug_loc     0x00004927      0x215 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .debug_loc     0x00004b3c      0x87f ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(USBtoSerial.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x6c0
+ .debug_ranges  0x00000000       0x60 USBtoSerial.o
+ .debug_ranges  0x00000060       0x10 Descriptors.o
+ .debug_ranges  0x00000070       0xc8 ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_ranges  0x00000138       0x10 ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_ranges  0x00000148      0x298 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_ranges  0x000003e0       0xa8 ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_ranges  0x00000488       0x20 ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_ranges  0x000004a8       0x28 ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_ranges  0x000004d0       0x28 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_ranges  0x000004f8       0x10 ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_ranges  0x00000508       0x10 ../../LUFA/Drivers/USB/Core/Events.o
+ .debug_ranges  0x00000518       0x10 ../../LUFA/Drivers/USB/Core/USBTask.o
+ .debug_ranges  0x00000528       0x20 ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+ .debug_ranges  0x00000548       0x88 ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+ .debug_ranges  0x000005d0       0x20 ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+ .debug_ranges  0x000005f0       0x20 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ .debug_ranges  0x00000610       0x30 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+ .debug_ranges  0x00000640       0x80 ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+
+Cross Reference Table
+
+Symbol                                            File
+Audio_Device_ConfigureEndpoints                   ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+Audio_Device_Event_Stub                           ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+Audio_Device_ProcessControlRequest                ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+CALLBACK_Audio_Device_GetSetEndpointProperty      ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+CALLBACK_Audio_Device_GetSetInterfaceProperty     ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+CALLBACK_HIDParser_FilterHIDReportItem            ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+CALLBACK_HID_Device_CreateHIDReport               ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+CALLBACK_HID_Device_ProcessHIDReport              ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+CALLBACK_MS_Device_SCSICommandReceived            ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+CALLBACK_USB_GetDescriptor                        Descriptors.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+CDC_Device_BytesReceived                          ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_ConfigureEndpoints                     ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  USBtoSerial.o
+CDC_Device_CreateBlockingStream                   ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_CreateStream                           ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_Event_Stub                             ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_Flush                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_ProcessControlRequest                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  USBtoSerial.o
+CDC_Device_ReceiveByte                            ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  USBtoSerial.o
+CDC_Device_SendByte                               ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  USBtoSerial.o
+CDC_Device_SendControlLineStateChange             ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_SendData                               ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_SendString                             ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+CDC_Device_USBTask                                ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  USBtoSerial.o
+ConfigurationDescriptor                           Descriptors.o
+DeviceDescriptor                                  Descriptors.o
+EVENT_Audio_Device_StreamStartStop                ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+EVENT_CDC_Device_BreakSent                        ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+EVENT_CDC_Device_ControLineStateChanged           ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+EVENT_CDC_Device_LineEncodingChanged              USBtoSerial.o
+EVENT_USB_Device_ConfigurationChanged             USBtoSerial.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+EVENT_USB_Device_Connect                          USBtoSerial.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_ControlRequest                   USBtoSerial.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+EVENT_USB_Device_Disconnect                       USBtoSerial.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_Reset                            ../../LUFA/Drivers/USB/Core/Events.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_StartOfFrame                     ../../LUFA/Drivers/USB/Core/Events.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_Suspend                          ../../LUFA/Drivers/USB/Core/Events.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_WakeUp                           ../../LUFA/Drivers/USB/Core/Events.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+Endpoint_ClearEndpoints                           ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+Endpoint_ClearStatusStage                         ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+Endpoint_ConfigureEndpointTable                   ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+Endpoint_ConfigureEndpoint_Prv                    ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+Endpoint_Discard_Stream                           ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Null_Stream                              ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_BE                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_LE                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_BE                   ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_LE                   ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+Endpoint_Read_EStream_BE                          ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_EStream_LE                          ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Stream_BE                           ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Stream_LE                           ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+Endpoint_WaitUntilReady                           ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_BE                 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_LE                 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_BE                 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_LE                 ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+Endpoint_Write_Control_Stream_BE                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_Stream_LE                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+Endpoint_Write_EStream_BE                         ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_EStream_LE                         ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_PStream_BE                         ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_PStream_LE                         ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Stream_BE                          ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Stream_LE                          ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+HID_Device_ConfigureEndpoints                     ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+HID_Device_ProcessControlRequest                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+HID_Device_USBTask                                ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+LanguageString                                    Descriptors.o
+MIDI_Device_ConfigureEndpoints                    ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+MIDI_Device_Flush                                 ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+MIDI_Device_ReceiveEventPacket                    ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+MIDI_Device_SendEventPacket                       ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+MIDI_Device_USBTask                               ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+MS_Device_ConfigureEndpoints                      ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+MS_Device_ProcessControlRequest                   ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+MS_Device_USBTask                                 ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+ManufacturerString                                Descriptors.o
+ProductString                                     Descriptors.o
+RNDIS_Device_ConfigureEndpoints                   ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+RNDIS_Device_IsPacketReceived                     ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+RNDIS_Device_ProcessControlRequest                ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+RNDIS_Device_ReadPacket                           ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+RNDIS_Device_SendPacket                           ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+RNDIS_Device_USBTask                              ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+SetupHardware                                     USBtoSerial.o
+USB_ControlRequest                                ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Core/USBTask.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+USB_Device_ConfigurationNumber                    ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Device_CurrentlySelfPowered                   ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Device_ProcessControlRequest                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/USBTask.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+USB_Device_RemoteWakeupEnabled                    ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Device_SendRemoteWakeup                       ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+USB_Disable                                       ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Event_Stub                                    ../../LUFA/Drivers/USB/Core/Events.o
+USB_GetHIDReportItemInfo                          ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_GetHIDReportSize                              ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_GetNextDescriptorComp                         ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfType                       ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeAfter                  ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeBefore                 ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_INT_ClearAllInterrupts                        ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_INT_DisableAllInterrupts                      ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Init                                          ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  USBtoSerial.o
+USB_IsInitialized                                 ../../LUFA/Drivers/USB/Core/USBTask.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_ProcessHIDReport                              ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_ResetInterface                                ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_SetHIDReportItemInfo                          ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_USBTask                                       ../../LUFA/Drivers/USB/Core/USBTask.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  USBtoSerial.o
+VirtualSerial_CDC_Interface                       USBtoSerial.o
+__bad_interrupt                                   /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__bss_end                                         /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_clear_bss.o)
+                                                  ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Core/USBTask.o
+                                                  ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/Events.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+                                                  Descriptors.o
+                                                  USBtoSerial.o
+__do_copy_data                                    /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_copy_data.o)
+                                                  ../../LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Core/USBTask.o
+                                                  ../../LUFA/Drivers/USB/Core/HostStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/Events.o
+                                                  ../../LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/Core/ConfigDescriptors.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                                                  ../../LUFA/Drivers/USB/Class/Common/HIDParser.o
+                                                  Descriptors.o
+                                                  USBtoSerial.o
+__eerd_byte_m32u4                                 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega32u4.o)
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+__eeupd_byte_m32u4                                /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+                                                  ../../LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+__eeupd_r18_m32u4                                 /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(eeupd_byte_atmega32u4.o)
+__heap_end                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__init                                            /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__stack                                           /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__udivmodsi4                                      /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_udivmodsi4.o)
+                                                  USBtoSerial.o
+__vector_1                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_10                                       ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_11                                       ../../LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_12                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_13                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_14                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_15                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_16                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_17                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_18                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_19                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_2                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_20                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_21                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_22                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_23                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_24                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_25                                       USBtoSerial.o
+                                                  /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_26                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_27                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_28                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_29                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_3                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_30                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_31                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_32                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_33                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_34                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_35                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_36                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_37                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_38                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_39                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_4                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_40                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_41                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_42                                       /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_5                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_6                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_7                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_8                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_9                                        /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vector_default                                  /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+__vectors                                         /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+_exit                                             /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+exit                                              /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/avr5/libgcc.a(_exit.o)
+                                                  /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+main                                              USBtoSerial.o
+                                                  /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32u4.o
+memcmp                                            /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcmp.o)
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+memcpy                                            /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+memcpy_P                                          /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                                  ../../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+memset                                            /usr/local/CrossPack-AVR-20130212/lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/libc.a(memset.o)
+                                                  ../../LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
