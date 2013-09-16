@@ -233,7 +233,6 @@ void SetupHardware(void)
 	/* Hardware Initialization */
 	LEDs_Init();
 	USB_Init();
-    timerInit();
 }
 
 void timerInit()
@@ -297,13 +296,13 @@ ISR(USART1_RX_vect, ISR_BLOCK)
 }
  */
 
-ISR(TIMER1_OVF_vect)
+ISR(TIMER1_OVR_vect)
 {
     timerVal++;
-    TCNT1 = 0;
+    TCNT0 = 0;
     if(timerVal == 60){
         timerVal = 0;
-        TCNT1 = 0;
+        TCNT0 = 0;
         PORTD ^= (1<<4);
         fprintf(&USBSerialStream, 'tick');
     }
