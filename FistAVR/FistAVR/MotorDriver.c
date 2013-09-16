@@ -15,9 +15,10 @@ void Init_PWM()
 {
 	// Set timer 0 to wave generation mode phase correct PWM
 	TCCR0A |= (1<<WGM00);
-	TCCR0A &= ~(1<<WGM01);
-	TCCR0B &= ~(1<<WGM02);
-
+	
+	// Set timer 1
+	TCCR1A |= (1<<WGM10); //phase correct 8-bit PWM
+	
 	// Set the clock source of the timer to be
 	// the I/O clock/8  prescaling
 	// TODO: set this to clock/1. This will push the 
@@ -25,29 +26,29 @@ void Init_PWM()
 	TCCR0B &= ~(1<<CS00);
 	TCCR0B |= (1<<CS01);
 	TCCR0B &= ~(1<<CS02);
+	
+	TCCR1B &= ~(1<<CS00);
+	TCCR1B |= (1<<CS01);
+	TCCR1B &= ~(1<<CS02);
 
 	// Zero both of the compare registers
 	OCR0A = 0;
 	OCR0B = 0;
+	OCR1A = 0;
+	OCR1B = 0;
 
 	// Enable the PWM output
-	TCCR0A &= ~(1<<COM0A0); // timer 0 output A
-	TCCR0A |= (1<<COM0A1);
-	
-	TCCR0A &= ~(1<<COM0B0); // timer 0 output B
-	TCCR0A |= (1<<COM0B1);
-
-
-	// TODO: Setup timer 1
-
+	//Clear on up counting, set when down counting
+	TCCR0A |= (1<<COM0A1); // timer 0 output A
+	TCCR0A |= (1<<COM0B1); // timer 0 output B
+	TCCR1A |= (1<<COM1A1); // timer 1 output A
+	TCCR1A |= (1<<COM1B1); // timer 1 output B
 
 	// Set both the pwm pin and the direction pin to be outputs
 	DDRB |=  (1<<7); // OC0A
 	DDRD |=  (1<<0); // OC0B
 	DDRB |=  (1<<5); // OC1A
 	DDRB |=  (1<<6); // OC1B
-	
-	// TODO: Enable the direction pins
 	
 	DDRD |=  (1<<4); // Direction 0
 	DDRD |=  (1<<5); // Direction 1
