@@ -100,14 +100,14 @@ int main(void)
 		
 		if (encoder_value[2] != 0)
         {
-            Set_Motor_Velocity(0, encoder_value[2]);
+            Set_Motor_Velocity(2, encoder_value[2]);
         }
         else
         {            
 			if (dir == 1)
 			{
 				vel += 10;
-				Set_Motor_Velocity(0, vel);
+				Set_Motor_Velocity(2, vel);
 				if (vel >= 240)
 				{
 					dir = 0;
@@ -116,7 +116,7 @@ int main(void)
 			else
 			{
 				vel -= 10;
-				Set_Motor_Velocity(0, vel);
+				Set_Motor_Velocity(2, vel);
 				if (vel <= 20)
 				{
 					dir = 1;
