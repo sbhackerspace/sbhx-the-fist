@@ -295,19 +295,19 @@ ISR(USART1_RX_vect, ISR_BLOCK)
         completeWord = 1;
     }
 }
- */
-
+ 
+*/
 ISR(TIMER1_COMPA_vect)
 {
-    /*
+    
     timerVal++;
     TCNT1 = 0;
     if(timerVal >= 250){
         timerVal = 0;
         TCNT1 = 0;
         PORTD ^= (1<<4);
-        fprintf(&USBSerialStream, 'tick');
-    }*/
+        //fprintf(&USBSerialStream, 'tick');
+    }
      
 }
 
