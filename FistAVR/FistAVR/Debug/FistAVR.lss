@@ -1,0 +1,1066 @@
+
+FistAVR.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  0000053a  000005ce  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000053a  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000c  00800100  00800100  000005ce  2**0
+                  ALLOC
+  3 .stab         000006cc  00000000  00000000  000005d0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000097  00000000  00000000  00000c9c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .comment      0000002f  00000000  00000000  00000d33  2**0
+                  CONTENTS, READONLY
+  6 .debug_aranges 000000a8  00000000  00000000  00000d62  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   000006a0  00000000  00000000  00000e0a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 00000342  00000000  00000000  000014aa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   0000047c  00000000  00000000  000017ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  00000268  00000000  00000000  00001c68  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    00000272  00000000  00000000  00001ed0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00000795  00000000  00000000  00002142  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 00000078  00000000  00000000  000028d7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 56 00 	jmp	0xac	; 0xac <__ctors_end>
+   4:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+   8:	0c 94 6b 01 	jmp	0x2d6	; 0x2d6 <__vector_2>
+   c:	0c 94 95 01 	jmp	0x32a	; 0x32a <__vector_3>
+  10:	0c 94 bd 01 	jmp	0x37a	; 0x37a <__vector_4>
+  14:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  18:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  1c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  20:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  24:	0c 94 38 01 	jmp	0x270	; 0x270 <__vector_9>
+  28:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  2c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  30:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  34:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  38:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  3c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  40:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  44:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  48:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  4c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  50:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  54:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  58:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  5c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  60:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  64:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  68:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  6c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  70:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  74:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  78:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  7c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  80:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  84:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  88:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  8c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  90:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  94:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  98:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  9c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  a0:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  a4:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  a8:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+
+000000ac <__ctors_end>:
+  ac:	11 24       	eor	r1, r1
+  ae:	1f be       	out	0x3f, r1	; 63
+  b0:	cf ef       	ldi	r28, 0xFF	; 255
+  b2:	da e0       	ldi	r29, 0x0A	; 10
+  b4:	de bf       	out	0x3e, r29	; 62
+  b6:	cd bf       	out	0x3d, r28	; 61
+
+000000b8 <__do_copy_data>:
+  b8:	11 e0       	ldi	r17, 0x01	; 1
+  ba:	a0 e0       	ldi	r26, 0x00	; 0
+  bc:	b1 e0       	ldi	r27, 0x01	; 1
+  be:	ea e3       	ldi	r30, 0x3A	; 58
+  c0:	f5 e0       	ldi	r31, 0x05	; 5
+  c2:	02 c0       	rjmp	.+4      	; 0xc8 <__do_copy_data+0x10>
+  c4:	05 90       	lpm	r0, Z+
+  c6:	0d 92       	st	X+, r0
+  c8:	a0 30       	cpi	r26, 0x00	; 0
+  ca:	b1 07       	cpc	r27, r17
+  cc:	d9 f7       	brne	.-10     	; 0xc4 <__do_copy_data+0xc>
+
+000000ce <__do_clear_bss>:
+  ce:	21 e0       	ldi	r18, 0x01	; 1
+  d0:	a0 e0       	ldi	r26, 0x00	; 0
+  d2:	b1 e0       	ldi	r27, 0x01	; 1
+  d4:	01 c0       	rjmp	.+2      	; 0xd8 <.do_clear_bss_start>
+
+000000d6 <.do_clear_bss_loop>:
+  d6:	1d 92       	st	X+, r1
+
+000000d8 <.do_clear_bss_start>:
+  d8:	ac 30       	cpi	r26, 0x0C	; 12
+  da:	b2 07       	cpc	r27, r18
+  dc:	e1 f7       	brne	.-8      	; 0xd6 <.do_clear_bss_loop>
+  de:	0e 94 f0 01 	call	0x3e0	; 0x3e0 <main>
+  e2:	0c 94 9b 02 	jmp	0x536	; 0x536 <_exit>
+
+000000e6 <__bad_interrupt>:
+  e6:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ea <Init_Encoders>:
+
+
+void Init_Encoders()
+{
+	
+	PCICR |= 1<<PCIE0; // Enable the pin change interrupts
+  ea:	e8 e6       	ldi	r30, 0x68	; 104
+  ec:	f0 e0       	ldi	r31, 0x00	; 0
+  ee:	80 81       	ld	r24, Z
+  f0:	81 60       	ori	r24, 0x01	; 1
+  f2:	80 83       	st	Z, r24
+	PCMSK0 |= 1<<PCINT0 | 1<<PCINT1 | 1<<PCINT2 | 1<<PCINT3 | 1<<PCINT4; // Enable specific pin change interrupts
+  f4:	eb e6       	ldi	r30, 0x6B	; 107
+  f6:	f0 e0       	ldi	r31, 0x00	; 0
+  f8:	80 81       	ld	r24, Z
+  fa:	8f 61       	ori	r24, 0x1F	; 31
+  fc:	80 83       	st	Z, r24
+	
+	EICRA |= 1<<ISC10 | 1<<ISC20 | 1<<ISC30; // Configure the external interrupts to trigger on all edges
+  fe:	e9 e6       	ldi	r30, 0x69	; 105
+ 100:	f0 e0       	ldi	r31, 0x00	; 0
+ 102:	80 81       	ld	r24, Z
+ 104:	84 65       	ori	r24, 0x54	; 84
+ 106:	80 83       	st	Z, r24
+	EIMSK |= 1<<INT1 | 1<<INT2 | 1<<INT3; // Enable the external interrupts
+ 108:	8d b3       	in	r24, 0x1d	; 29
+ 10a:	8e 60       	ori	r24, 0x0E	; 14
+ 10c:	8d bb       	out	0x1d, r24	; 29
+	
+	
+	// Reset the encoder values to zero
+	encoder_value[0] = 0;
+ 10e:	10 92 05 01 	sts	0x0105, r1
+ 112:	10 92 04 01 	sts	0x0104, r1
+	encoder_value[1] = 0;
+ 116:	10 92 07 01 	sts	0x0107, r1
+ 11a:	10 92 06 01 	sts	0x0106, r1
+	encoder_value[2] = 0;
+ 11e:	10 92 09 01 	sts	0x0109, r1
+ 122:	10 92 08 01 	sts	0x0108, r1
+	encoder_value[3] = 0;
+ 126:	10 92 0b 01 	sts	0x010B, r1
+ 12a:	10 92 0a 01 	sts	0x010A, r1
+		
+	// These large values will cause the variables to be initialized in the ISR on the first run.
+	oldEncoderPins[0] = -1;
+ 12e:	8f ef       	ldi	r24, 0xFF	; 255
+ 130:	80 93 00 01 	sts	0x0100, r24
+	oldEncoderPins[1] = -1;
+ 134:	80 93 01 01 	sts	0x0101, r24
+	oldEncoderPins[2] = -1;
+ 138:	80 93 02 01 	sts	0x0102, r24
+	oldEncoderPins[3] = -1;
+ 13c:	80 93 03 01 	sts	0x0103, r24
+ 140:	08 95       	ret
+
+00000142 <get_encoder_delta>:
+}
+
+int8_t get_encoder_delta( uint8_t newEncoderPins, uint8_t oldEncoderPins)
+{
+	switch(oldEncoderPins) //Possible states: 00 01 11 10
+ 142:	61 30       	cpi	r22, 0x01	; 1
+ 144:	c1 f0       	breq	.+48     	; 0x176 <get_encoder_delta+0x34>
+ 146:	28 f0       	brcs	.+10     	; 0x152 <get_encoder_delta+0x10>
+ 148:	62 30       	cpi	r22, 0x02	; 2
+ 14a:	49 f0       	breq	.+18     	; 0x15e <get_encoder_delta+0x1c>
+ 14c:	63 30       	cpi	r22, 0x03	; 3
+ 14e:	c9 f4       	brne	.+50     	; 0x182 <get_encoder_delta+0x40>
+ 150:	0c c0       	rjmp	.+24     	; 0x16a <get_encoder_delta+0x28>
+	{
+		case(0): // 00
+		{
+			if(newEncoderPins == (1<<0))			{ return 1; }//10->00
+ 152:	81 30       	cpi	r24, 0x01	; 1
+ 154:	c1 f0       	breq	.+48     	; 0x186 <get_encoder_delta+0x44>
+			if(newEncoderPins == (1<<1))			{ return -1; }//01->00
+ 156:	82 30       	cpi	r24, 0x02	; 2
+ 158:	c1 f0       	breq	.+48     	; 0x18a <get_encoder_delta+0x48>
+			if(newEncoderPins == 0)					{ return -1; }//00->10
+			break;
+		}
+	}
+	
+	return 0;
+ 15a:	80 e0       	ldi	r24, 0x00	; 0
+ 15c:	08 95       	ret
+			if(newEncoderPins == (1<<1))			{ return -1; }//01->00
+			break;
+		}
+		case((1<<1)): // 01
+		{
+			if(newEncoderPins == 0)					{ return 1; }//00->01
+ 15e:	88 23       	and	r24, r24
+ 160:	b1 f0       	breq	.+44     	; 0x18e <get_encoder_delta+0x4c>
+			if(newEncoderPins == ((1<<0)|(1<<1)))	{ return -1; }//11->01
+ 162:	83 30       	cpi	r24, 0x03	; 3
+ 164:	b1 f0       	breq	.+44     	; 0x192 <get_encoder_delta+0x50>
+			if(newEncoderPins == 0)					{ return -1; }//00->10
+			break;
+		}
+	}
+	
+	return 0;
+ 166:	80 e0       	ldi	r24, 0x00	; 0
+ 168:	08 95       	ret
+			if(newEncoderPins == ((1<<0)|(1<<1)))	{ return -1; }//11->01
+			break;
+		}
+		case(((1<<0)|(1<<1))): // 11
+		{
+			if(newEncoderPins == (1<<1))			{ return 1; }//01->11
+ 16a:	82 30       	cpi	r24, 0x02	; 2
+ 16c:	a1 f0       	breq	.+40     	; 0x196 <get_encoder_delta+0x54>
+			if(newEncoderPins == (1<<0))			{ return -1; }//10->11
+ 16e:	81 30       	cpi	r24, 0x01	; 1
+ 170:	a1 f0       	breq	.+40     	; 0x19a <get_encoder_delta+0x58>
+			if(newEncoderPins == 0)					{ return -1; }//00->10
+			break;
+		}
+	}
+	
+	return 0;
+ 172:	80 e0       	ldi	r24, 0x00	; 0
+ 174:	08 95       	ret
+			if(newEncoderPins == (1<<0))			{ return -1; }//10->11
+			break;
+		}
+		case((1<<0)): // 10
+		{
+			if(newEncoderPins == ((1<<0)|(1<<1)))	{ return 1; }//11->10
+ 176:	83 30       	cpi	r24, 0x03	; 3
+ 178:	91 f0       	breq	.+36     	; 0x19e <get_encoder_delta+0x5c>
+			if(newEncoderPins == 0)					{ return -1; }//00->10
+ 17a:	88 23       	and	r24, r24
+ 17c:	91 f0       	breq	.+36     	; 0x1a2 <get_encoder_delta+0x60>
+			break;
+		}
+	}
+	
+	return 0;
+ 17e:	80 e0       	ldi	r24, 0x00	; 0
+ 180:	08 95       	ret
+ 182:	80 e0       	ldi	r24, 0x00	; 0
+ 184:	08 95       	ret
+{
+	switch(oldEncoderPins) //Possible states: 00 01 11 10
+	{
+		case(0): // 00
+		{
+			if(newEncoderPins == (1<<0))			{ return 1; }//10->00
+ 186:	81 e0       	ldi	r24, 0x01	; 1
+ 188:	08 95       	ret
+			if(newEncoderPins == (1<<1))			{ return -1; }//01->00
+ 18a:	8f ef       	ldi	r24, 0xFF	; 255
+ 18c:	08 95       	ret
+			break;
+		}
+		case((1<<1)): // 01
+		{
+			if(newEncoderPins == 0)					{ return 1; }//00->01
+ 18e:	81 e0       	ldi	r24, 0x01	; 1
+ 190:	08 95       	ret
+			if(newEncoderPins == ((1<<0)|(1<<1)))	{ return -1; }//11->01
+ 192:	8f ef       	ldi	r24, 0xFF	; 255
+ 194:	08 95       	ret
+			break;
+		}
+		case(((1<<0)|(1<<1))): // 11
+		{
+			if(newEncoderPins == (1<<1))			{ return 1; }//01->11
+ 196:	81 e0       	ldi	r24, 0x01	; 1
+ 198:	08 95       	ret
+			if(newEncoderPins == (1<<0))			{ return -1; }//10->11
+ 19a:	8f ef       	ldi	r24, 0xFF	; 255
+ 19c:	08 95       	ret
+			break;
+		}
+		case((1<<0)): // 10
+		{
+			if(newEncoderPins == ((1<<0)|(1<<1)))	{ return 1; }//11->10
+ 19e:	81 e0       	ldi	r24, 0x01	; 1
+ 1a0:	08 95       	ret
+			if(newEncoderPins == 0)					{ return -1; }//00->10
+ 1a2:	8f ef       	ldi	r24, 0xFF	; 255
+			break;
+		}
+	}
+	
+	return 0;
+}
+ 1a4:	08 95       	ret
+
+000001a6 <read_encoder>:
+
+void read_encoder(uint8_t encoderNumber, uint8_t rawEncoderPins, uint8_t encoderMask, uint8_t shiftAmount)
+{
+ 1a6:	df 92       	push	r13
+ 1a8:	ef 92       	push	r14
+ 1aa:	ff 92       	push	r15
+ 1ac:	0f 93       	push	r16
+ 1ae:	1f 93       	push	r17
+ 1b0:	cf 93       	push	r28
+ 1b2:	df 93       	push	r29
+	const uint8_t encoderPins = (rawEncoderPins & encoderMask) >> shiftAmount; // mask and move bits to rightmost for the encoder function
+ 1b4:	46 23       	and	r20, r22
+ 1b6:	50 e0       	ldi	r21, 0x00	; 0
+ 1b8:	ba 01       	movw	r22, r20
+ 1ba:	02 c0       	rjmp	.+4      	; 0x1c0 <read_encoder+0x1a>
+ 1bc:	75 95       	asr	r23
+ 1be:	67 95       	ror	r22
+ 1c0:	2a 95       	dec	r18
+ 1c2:	e2 f7       	brpl	.-8      	; 0x1bc <read_encoder+0x16>
+ 1c4:	9b 01       	movw	r18, r22
+ 1c6:	d6 2e       	mov	r13, r22
+	
+	// If the values have changed, update the encoder counts and old pin values
+	if (oldEncoderPins[encoderNumber] != encoderPins)
+ 1c8:	e8 2f       	mov	r30, r24
+ 1ca:	f0 e0       	ldi	r31, 0x00	; 0
+ 1cc:	df 01       	movw	r26, r30
+ 1ce:	a0 50       	subi	r26, 0x00	; 0
+ 1d0:	bf 4f       	sbci	r27, 0xFF	; 255
+ 1d2:	8c 91       	ld	r24, X
+ 1d4:	86 17       	cp	r24, r22
+ 1d6:	b9 f0       	breq	.+46     	; 0x206 <read_encoder+0x60>
+	{
+		encoder_value[encoderNumber] += get_encoder_delta(encoderPins, oldEncoderPins[encoderNumber]);
+ 1d8:	8f 01       	movw	r16, r30
+ 1da:	00 0f       	add	r16, r16
+ 1dc:	11 1f       	adc	r17, r17
+ 1de:	0c 5f       	subi	r16, 0xFC	; 252
+ 1e0:	1e 4f       	sbci	r17, 0xFE	; 254
+ 1e2:	d8 01       	movw	r26, r16
+ 1e4:	ed 90       	ld	r14, X+
+ 1e6:	fc 90       	ld	r15, X
+ 1e8:	ef 01       	movw	r28, r30
+ 1ea:	c0 50       	subi	r28, 0x00	; 0
+ 1ec:	df 4f       	sbci	r29, 0xFF	; 255
+ 1ee:	68 81       	ld	r22, Y
+ 1f0:	82 2f       	mov	r24, r18
+ 1f2:	0e 94 a1 00 	call	0x142	; 0x142 <get_encoder_delta>
+ 1f6:	e8 0e       	add	r14, r24
+ 1f8:	f1 1c       	adc	r15, r1
+ 1fa:	87 fd       	sbrc	r24, 7
+ 1fc:	fa 94       	dec	r15
+ 1fe:	f8 01       	movw	r30, r16
+ 200:	f1 82       	std	Z+1, r15	; 0x01
+ 202:	e0 82       	st	Z, r14
+		oldEncoderPins[encoderNumber] = encoderPins;
+ 204:	d8 82       	st	Y, r13
+	}
+}
+ 206:	df 91       	pop	r29
+ 208:	cf 91       	pop	r28
+ 20a:	1f 91       	pop	r17
+ 20c:	0f 91       	pop	r16
+ 20e:	ff 90       	pop	r15
+ 210:	ef 90       	pop	r14
+ 212:	df 90       	pop	r13
+ 214:	08 95       	ret
+
+00000216 <read_encoder2>:
+
+void read_encoder2()
+{
+ 216:	df 92       	push	r13
+ 218:	ef 92       	push	r14
+ 21a:	ff 92       	push	r15
+ 21c:	0f 93       	push	r16
+ 21e:	1f 93       	push	r17
+ 220:	cf 93       	push	r28
+ 222:	df 93       	push	r29
+	const uint8_t rawEncoderPinsB = PINB; //pin B4
+ 224:	83 b1       	in	r24, 0x03	; 3
+	const uint8_t rawEncoderPinsD = PIND; //pin D1
+ 226:	99 b1       	in	r25, 0x09	; 9
+	
+	uint8_t encoderPins = 0;
+	encoderPins |= ((rawEncoderPinsB & 0x10) >> 4);
+ 228:	82 95       	swap	r24
+ 22a:	81 70       	andi	r24, 0x01	; 1
+	encoderPins |= ((rawEncoderPinsD & 0x02) >> 0);
+ 22c:	92 70       	andi	r25, 0x02	; 2
+ 22e:	d9 2e       	mov	r13, r25
+ 230:	d8 2a       	or	r13, r24
+	
+	if (oldEncoderPins[2] != encoderPins)
+ 232:	80 91 02 01 	lds	r24, 0x0102
+ 236:	8d 15       	cp	r24, r13
+ 238:	99 f0       	breq	.+38     	; 0x260 <read_encoder2+0x4a>
+	{
+		encoder_value[2] += get_encoder_delta(encoderPins, oldEncoderPins[2]);
+ 23a:	08 e0       	ldi	r16, 0x08	; 8
+ 23c:	11 e0       	ldi	r17, 0x01	; 1
+ 23e:	f8 01       	movw	r30, r16
+ 240:	e0 80       	ld	r14, Z
+ 242:	f1 80       	ldd	r15, Z+1	; 0x01
+ 244:	c2 e0       	ldi	r28, 0x02	; 2
+ 246:	d1 e0       	ldi	r29, 0x01	; 1
+ 248:	68 81       	ld	r22, Y
+ 24a:	8d 2d       	mov	r24, r13
+ 24c:	0e 94 a1 00 	call	0x142	; 0x142 <get_encoder_delta>
+ 250:	e8 0e       	add	r14, r24
+ 252:	f1 1c       	adc	r15, r1
+ 254:	87 fd       	sbrc	r24, 7
+ 256:	fa 94       	dec	r15
+ 258:	f8 01       	movw	r30, r16
+ 25a:	f1 82       	std	Z+1, r15	; 0x01
+ 25c:	e0 82       	st	Z, r14
+		oldEncoderPins[2] = encoderPins;
+ 25e:	d8 82       	st	Y, r13
+	}
+}
+ 260:	df 91       	pop	r29
+ 262:	cf 91       	pop	r28
+ 264:	1f 91       	pop	r17
+ 266:	0f 91       	pop	r16
+ 268:	ff 90       	pop	r15
+ 26a:	ef 90       	pop	r14
+ 26c:	df 90       	pop	r13
+ 26e:	08 95       	ret
+
+00000270 <__vector_9>:
+#define shiftAmount2 0
+#define shiftAmount3 2
+
+
+ISR(PCINT0_vect) // encoders 0A, 0B, 1A, 1B
+{
+ 270:	1f 92       	push	r1
+ 272:	0f 92       	push	r0
+ 274:	0f b6       	in	r0, 0x3f	; 63
+ 276:	0f 92       	push	r0
+ 278:	11 24       	eor	r1, r1
+ 27a:	2f 93       	push	r18
+ 27c:	3f 93       	push	r19
+ 27e:	4f 93       	push	r20
+ 280:	5f 93       	push	r21
+ 282:	6f 93       	push	r22
+ 284:	7f 93       	push	r23
+ 286:	8f 93       	push	r24
+ 288:	9f 93       	push	r25
+ 28a:	af 93       	push	r26
+ 28c:	bf 93       	push	r27
+ 28e:	cf 93       	push	r28
+ 290:	ef 93       	push	r30
+ 292:	ff 93       	push	r31
+	// Read the encoder pins
+	const uint8_t rawEncoderPins = PINB;
+ 294:	c3 b1       	in	r28, 0x03	; 3
+	
+	read_encoder(0, rawEncoderPins, encoderMask0, shiftAmount0);
+ 296:	20 e0       	ldi	r18, 0x00	; 0
+ 298:	43 e0       	ldi	r20, 0x03	; 3
+ 29a:	6c 2f       	mov	r22, r28
+ 29c:	80 e0       	ldi	r24, 0x00	; 0
+ 29e:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <read_encoder>
+	read_encoder(1, rawEncoderPins, encoderMask1, shiftAmount1);
+ 2a2:	22 e0       	ldi	r18, 0x02	; 2
+ 2a4:	4c e0       	ldi	r20, 0x0C	; 12
+ 2a6:	6c 2f       	mov	r22, r28
+ 2a8:	81 e0       	ldi	r24, 0x01	; 1
+ 2aa:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <read_encoder>
+	read_encoder2();
+ 2ae:	0e 94 0b 01 	call	0x216	; 0x216 <read_encoder2>
+}
+ 2b2:	ff 91       	pop	r31
+ 2b4:	ef 91       	pop	r30
+ 2b6:	cf 91       	pop	r28
+ 2b8:	bf 91       	pop	r27
+ 2ba:	af 91       	pop	r26
+ 2bc:	9f 91       	pop	r25
+ 2be:	8f 91       	pop	r24
+ 2c0:	7f 91       	pop	r23
+ 2c2:	6f 91       	pop	r22
+ 2c4:	5f 91       	pop	r21
+ 2c6:	4f 91       	pop	r20
+ 2c8:	3f 91       	pop	r19
+ 2ca:	2f 91       	pop	r18
+ 2cc:	0f 90       	pop	r0
+ 2ce:	0f be       	out	0x3f, r0	; 63
+ 2d0:	0f 90       	pop	r0
+ 2d2:	1f 90       	pop	r1
+ 2d4:	18 95       	reti
+
+000002d6 <__vector_2>:
+
+ISR(INT1_vect) // encoder 2B
+{
+ 2d6:	1f 92       	push	r1
+ 2d8:	0f 92       	push	r0
+ 2da:	0f b6       	in	r0, 0x3f	; 63
+ 2dc:	0f 92       	push	r0
+ 2de:	11 24       	eor	r1, r1
+ 2e0:	2f 93       	push	r18
+ 2e2:	3f 93       	push	r19
+ 2e4:	4f 93       	push	r20
+ 2e6:	5f 93       	push	r21
+ 2e8:	6f 93       	push	r22
+ 2ea:	7f 93       	push	r23
+ 2ec:	8f 93       	push	r24
+ 2ee:	9f 93       	push	r25
+ 2f0:	af 93       	push	r26
+ 2f2:	bf 93       	push	r27
+ 2f4:	ef 93       	push	r30
+ 2f6:	ff 93       	push	r31
+	// Read the encoder pins
+	const uint8_t rawEncoderPins = PIND;
+ 2f8:	69 b1       	in	r22, 0x09	; 9
+	
+	read_encoder(2, rawEncoderPins, encoderMask2, shiftAmount2);
+ 2fa:	20 e0       	ldi	r18, 0x00	; 0
+ 2fc:	43 e0       	ldi	r20, 0x03	; 3
+ 2fe:	82 e0       	ldi	r24, 0x02	; 2
+ 300:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <read_encoder>
+	read_encoder2();
+ 304:	0e 94 0b 01 	call	0x216	; 0x216 <read_encoder2>
+}
+ 308:	ff 91       	pop	r31
+ 30a:	ef 91       	pop	r30
+ 30c:	bf 91       	pop	r27
+ 30e:	af 91       	pop	r26
+ 310:	9f 91       	pop	r25
+ 312:	8f 91       	pop	r24
+ 314:	7f 91       	pop	r23
+ 316:	6f 91       	pop	r22
+ 318:	5f 91       	pop	r21
+ 31a:	4f 91       	pop	r20
+ 31c:	3f 91       	pop	r19
+ 31e:	2f 91       	pop	r18
+ 320:	0f 90       	pop	r0
+ 322:	0f be       	out	0x3f, r0	; 63
+ 324:	0f 90       	pop	r0
+ 326:	1f 90       	pop	r1
+ 328:	18 95       	reti
+
+0000032a <__vector_3>:
+
+ISR(INT2_vect) // encoder 3A
+{
+ 32a:	1f 92       	push	r1
+ 32c:	0f 92       	push	r0
+ 32e:	0f b6       	in	r0, 0x3f	; 63
+ 330:	0f 92       	push	r0
+ 332:	11 24       	eor	r1, r1
+ 334:	2f 93       	push	r18
+ 336:	3f 93       	push	r19
+ 338:	4f 93       	push	r20
+ 33a:	5f 93       	push	r21
+ 33c:	6f 93       	push	r22
+ 33e:	7f 93       	push	r23
+ 340:	8f 93       	push	r24
+ 342:	9f 93       	push	r25
+ 344:	af 93       	push	r26
+ 346:	bf 93       	push	r27
+ 348:	ef 93       	push	r30
+ 34a:	ff 93       	push	r31
+	// Read the encoder pins
+	const uint8_t rawEncoderPins = PIND;
+ 34c:	69 b1       	in	r22, 0x09	; 9
+	
+	read_encoder(3, rawEncoderPins, encoderMask3, shiftAmount3);
+ 34e:	22 e0       	ldi	r18, 0x02	; 2
+ 350:	4c e0       	ldi	r20, 0x0C	; 12
+ 352:	83 e0       	ldi	r24, 0x03	; 3
+ 354:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <read_encoder>
+}
+ 358:	ff 91       	pop	r31
+ 35a:	ef 91       	pop	r30
+ 35c:	bf 91       	pop	r27
+ 35e:	af 91       	pop	r26
+ 360:	9f 91       	pop	r25
+ 362:	8f 91       	pop	r24
+ 364:	7f 91       	pop	r23
+ 366:	6f 91       	pop	r22
+ 368:	5f 91       	pop	r21
+ 36a:	4f 91       	pop	r20
+ 36c:	3f 91       	pop	r19
+ 36e:	2f 91       	pop	r18
+ 370:	0f 90       	pop	r0
+ 372:	0f be       	out	0x3f, r0	; 63
+ 374:	0f 90       	pop	r0
+ 376:	1f 90       	pop	r1
+ 378:	18 95       	reti
+
+0000037a <__vector_4>:
+
+ISR(INT3_vect) // encoder 3B
+{
+ 37a:	1f 92       	push	r1
+ 37c:	0f 92       	push	r0
+ 37e:	0f b6       	in	r0, 0x3f	; 63
+ 380:	0f 92       	push	r0
+ 382:	11 24       	eor	r1, r1
+ 384:	2f 93       	push	r18
+ 386:	3f 93       	push	r19
+ 388:	4f 93       	push	r20
+ 38a:	5f 93       	push	r21
+ 38c:	6f 93       	push	r22
+ 38e:	7f 93       	push	r23
+ 390:	8f 93       	push	r24
+ 392:	9f 93       	push	r25
+ 394:	af 93       	push	r26
+ 396:	bf 93       	push	r27
+ 398:	ef 93       	push	r30
+ 39a:	ff 93       	push	r31
+	// Read the encoder pins
+	const uint8_t rawEncoderPins = PIND;
+ 39c:	69 b1       	in	r22, 0x09	; 9
+
+	read_encoder(3, rawEncoderPins, encoderMask3, shiftAmount3);
+ 39e:	22 e0       	ldi	r18, 0x02	; 2
+ 3a0:	4c e0       	ldi	r20, 0x0C	; 12
+ 3a2:	83 e0       	ldi	r24, 0x03	; 3
+ 3a4:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <read_encoder>
+ 3a8:	ff 91       	pop	r31
+ 3aa:	ef 91       	pop	r30
+ 3ac:	bf 91       	pop	r27
+ 3ae:	af 91       	pop	r26
+ 3b0:	9f 91       	pop	r25
+ 3b2:	8f 91       	pop	r24
+ 3b4:	7f 91       	pop	r23
+ 3b6:	6f 91       	pop	r22
+ 3b8:	5f 91       	pop	r21
+ 3ba:	4f 91       	pop	r20
+ 3bc:	3f 91       	pop	r19
+ 3be:	2f 91       	pop	r18
+ 3c0:	0f 90       	pop	r0
+ 3c2:	0f be       	out	0x3f, r0	; 63
+ 3c4:	0f 90       	pop	r0
+ 3c6:	1f 90       	pop	r1
+ 3c8:	18 95       	reti
+
+000003ca <delayms>:
+#include "EncoderReader.h"
+#include "MotorDriver.h"
+
+void delayms( uint16_t millis )
+{
+	while ( millis )
+ 3ca:	00 97       	sbiw	r24, 0x00	; 0
+ 3cc:	41 f0       	breq	.+16     	; 0x3de <delayms+0x14>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 3ce:	ef e9       	ldi	r30, 0x9F	; 159
+ 3d0:	ff e0       	ldi	r31, 0x0F	; 15
+ 3d2:	31 97       	sbiw	r30, 0x01	; 1
+ 3d4:	f1 f7       	brne	.-4      	; 0x3d2 <delayms+0x8>
+ 3d6:	00 c0       	rjmp	.+0      	; 0x3d8 <delayms+0xe>
+ 3d8:	00 00       	nop
+	{
+		_delay_ms( 1 );
+		millis--;
+ 3da:	01 97       	sbiw	r24, 0x01	; 1
+#include "EncoderReader.h"
+#include "MotorDriver.h"
+
+void delayms( uint16_t millis )
+{
+	while ( millis )
+ 3dc:	c1 f7       	brne	.-16     	; 0x3ce <delayms+0x4>
+ 3de:	08 95       	ret
+
+000003e0 <main>:
+extern volatile int16_t encoder_value[];
+
+
+int main(void)
+{
+	Init_PWM();
+ 3e0:	0e 94 2b 02 	call	0x456	; 0x456 <Init_PWM>
+	Init_Encoders();
+ 3e4:	0e 94 75 00 	call	0xea	; 0xea <Init_Encoders>
+    
+	//PCICR |= 1<<PCIE0; // Enable the pin change interrupts
+	//PCMSK0 |= 1<<PCINT0 | 1<<PCINT1; // Enable specific pin change interrupts
+
+	sei(); // Enable Global Interrupts
+ 3e8:	78 94       	sei
+	
+    Set_Motor_Velocity(0,0);
+ 3ea:	60 e0       	ldi	r22, 0x00	; 0
+ 3ec:	70 e0       	ldi	r23, 0x00	; 0
+ 3ee:	80 e0       	ldi	r24, 0x00	; 0
+ 3f0:	0e 94 66 02 	call	0x4cc	; 0x4cc <Set_Motor_Velocity>
+	//uint8_t led_pin = PB4;
+	
+	//Set_Motor1_Velocity( 100 );
+	
+	int16_t vel = 0;
+	char dir = 1;
+ 3f4:	ff 24       	eor	r15, r15
+ 3f6:	f3 94       	inc	r15
+	//PORTB &= ~( 1 << PB0 );
+	//uint8_t led_pin = PB4;
+	
+	//Set_Motor1_Velocity( 100 );
+	
+	int16_t vel = 0;
+ 3f8:	c0 e0       	ldi	r28, 0x00	; 0
+ 3fa:	d0 e0       	ldi	r29, 0x00	; 0
+        //}
+        
+		//Set_Motor1_Velocity(100);
+		delayms( 50 );                 // delay ms
+		
+		if (encoder_value[2] != 0)
+ 3fc:	08 e0       	ldi	r16, 0x08	; 8
+ 3fe:	11 e0       	ldi	r17, 0x01	; 1
+			{
+				vel -= 10;
+				Set_Motor_Velocity(2, vel);
+				if (vel <= 20)
+				{
+					dir = 1;
+ 400:	ee 24       	eor	r14, r14
+ 402:	e3 94       	inc	r14
+			{
+				vel += 10;
+				Set_Motor_Velocity(2, vel);
+				if (vel >= 240)
+				{
+					dir = 0;
+ 404:	d1 2c       	mov	r13, r1
+ 406:	03 c0       	rjmp	.+6      	; 0x40e <main+0x2e>
+ 408:	fd 2c       	mov	r15, r13
+ 40a:	01 c0       	rjmp	.+2      	; 0x40e <main+0x2e>
+			{
+				vel -= 10;
+				Set_Motor_Velocity(2, vel);
+				if (vel <= 20)
+				{
+					dir = 1;
+ 40c:	fe 2c       	mov	r15, r14
+                //k += 1;
+            //}            
+        //}
+        
+		//Set_Motor1_Velocity(100);
+		delayms( 50 );                 // delay ms
+ 40e:	82 e3       	ldi	r24, 0x32	; 50
+ 410:	90 e0       	ldi	r25, 0x00	; 0
+ 412:	0e 94 e5 01 	call	0x3ca	; 0x3ca <delayms>
+		
+		if (encoder_value[2] != 0)
+ 416:	f8 01       	movw	r30, r16
+ 418:	80 81       	ld	r24, Z
+ 41a:	91 81       	ldd	r25, Z+1	; 0x01
+ 41c:	89 2b       	or	r24, r25
+ 41e:	31 f0       	breq	.+12     	; 0x42c <main+0x4c>
+        {
+            Set_Motor_Velocity(2, encoder_value[2]);
+ 420:	60 81       	ld	r22, Z
+ 422:	71 81       	ldd	r23, Z+1	; 0x01
+ 424:	82 e0       	ldi	r24, 0x02	; 2
+ 426:	0e 94 66 02 	call	0x4cc	; 0x4cc <Set_Motor_Velocity>
+ 42a:	f1 cf       	rjmp	.-30     	; 0x40e <main+0x2e>
+        }
+        else
+        {            
+			if (dir == 1)
+ 42c:	f1 e0       	ldi	r31, 0x01	; 1
+ 42e:	ff 12       	cpse	r15, r31
+ 430:	09 c0       	rjmp	.+18     	; 0x444 <main+0x64>
+			{
+				vel += 10;
+ 432:	2a 96       	adiw	r28, 0x0a	; 10
+				Set_Motor_Velocity(2, vel);
+ 434:	be 01       	movw	r22, r28
+ 436:	82 e0       	ldi	r24, 0x02	; 2
+ 438:	0e 94 66 02 	call	0x4cc	; 0x4cc <Set_Motor_Velocity>
+				if (vel >= 240)
+ 43c:	c0 3f       	cpi	r28, 0xF0	; 240
+ 43e:	d1 05       	cpc	r29, r1
+ 440:	1c f7       	brge	.-58     	; 0x408 <main+0x28>
+ 442:	e5 cf       	rjmp	.-54     	; 0x40e <main+0x2e>
+					dir = 0;
+				}
+			}
+			else
+			{
+				vel -= 10;
+ 444:	2a 97       	sbiw	r28, 0x0a	; 10
+				Set_Motor_Velocity(2, vel);
+ 446:	be 01       	movw	r22, r28
+ 448:	82 e0       	ldi	r24, 0x02	; 2
+ 44a:	0e 94 66 02 	call	0x4cc	; 0x4cc <Set_Motor_Velocity>
+				if (vel <= 20)
+ 44e:	c5 31       	cpi	r28, 0x15	; 21
+ 450:	d1 05       	cpc	r29, r1
+ 452:	e4 f2       	brlt	.-72     	; 0x40c <main+0x2c>
+ 454:	dc cf       	rjmp	.-72     	; 0x40e <main+0x2e>
+
+00000456 <Init_PWM>:
+
+//This initializes timer 0 (8 bits) to phase correct PWM
+void Init_PWM()
+{
+	// Set timer 0 to wave generation mode phase correct PWM
+	TCCR0A |= (1<<WGM00);
+ 456:	84 b5       	in	r24, 0x24	; 36
+ 458:	81 60       	ori	r24, 0x01	; 1
+ 45a:	84 bd       	out	0x24, r24	; 36
+	
+	// Set timer 1
+	TCCR1A |= (1<<WGM10); //phase correct 8-bit PWM
+ 45c:	e0 e8       	ldi	r30, 0x80	; 128
+ 45e:	f0 e0       	ldi	r31, 0x00	; 0
+ 460:	80 81       	ld	r24, Z
+ 462:	81 60       	ori	r24, 0x01	; 1
+ 464:	80 83       	st	Z, r24
+	
+	// Set the clock source of the timer to be
+	// the I/O clock/8  prescaling
+	// TODO: set this to clock/1. This will push the 
+	//  frequency above audible range.
+	TCCR0B &= ~(1<<CS00);
+ 466:	85 b5       	in	r24, 0x25	; 37
+ 468:	8e 7f       	andi	r24, 0xFE	; 254
+ 46a:	85 bd       	out	0x25, r24	; 37
+	TCCR0B |= (1<<CS01);
+ 46c:	85 b5       	in	r24, 0x25	; 37
+ 46e:	82 60       	ori	r24, 0x02	; 2
+ 470:	85 bd       	out	0x25, r24	; 37
+	TCCR0B &= ~(1<<CS02);
+ 472:	85 b5       	in	r24, 0x25	; 37
+ 474:	8b 7f       	andi	r24, 0xFB	; 251
+ 476:	85 bd       	out	0x25, r24	; 37
+	
+	TCCR1B &= ~(1<<CS00);
+ 478:	a1 e8       	ldi	r26, 0x81	; 129
+ 47a:	b0 e0       	ldi	r27, 0x00	; 0
+ 47c:	8c 91       	ld	r24, X
+ 47e:	8e 7f       	andi	r24, 0xFE	; 254
+ 480:	8c 93       	st	X, r24
+	TCCR1B |= (1<<CS01);
+ 482:	8c 91       	ld	r24, X
+ 484:	82 60       	ori	r24, 0x02	; 2
+ 486:	8c 93       	st	X, r24
+	TCCR1B &= ~(1<<CS02);
+ 488:	8c 91       	ld	r24, X
+ 48a:	8b 7f       	andi	r24, 0xFB	; 251
+ 48c:	8c 93       	st	X, r24
+
+	// Zero both of the compare registers
+	OCR0A = 0;
+ 48e:	17 bc       	out	0x27, r1	; 39
+	OCR0B = 0;
+ 490:	18 bc       	out	0x28, r1	; 40
+	OCR1A = 0;
+ 492:	10 92 89 00 	sts	0x0089, r1
+ 496:	10 92 88 00 	sts	0x0088, r1
+	OCR1B = 0;
+ 49a:	10 92 8b 00 	sts	0x008B, r1
+ 49e:	10 92 8a 00 	sts	0x008A, r1
+
+	// Enable the PWM output
+	//Clear on up counting, set when down counting
+	TCCR0A |= (1<<COM0A1); // timer 0 output A
+ 4a2:	84 b5       	in	r24, 0x24	; 36
+ 4a4:	80 68       	ori	r24, 0x80	; 128
+ 4a6:	84 bd       	out	0x24, r24	; 36
+	TCCR0A |= (1<<COM0B1); // timer 0 output B
+ 4a8:	84 b5       	in	r24, 0x24	; 36
+ 4aa:	80 62       	ori	r24, 0x20	; 32
+ 4ac:	84 bd       	out	0x24, r24	; 36
+	TCCR1A |= (1<<COM1A1); // timer 1 output A
+ 4ae:	80 81       	ld	r24, Z
+ 4b0:	80 68       	ori	r24, 0x80	; 128
+ 4b2:	80 83       	st	Z, r24
+	TCCR1A |= (1<<COM1B1); // timer 1 output B
+ 4b4:	80 81       	ld	r24, Z
+ 4b6:	80 62       	ori	r24, 0x20	; 32
+ 4b8:	80 83       	st	Z, r24
+
+	// Set both the pwm pin and the direction pin to be outputs
+	DDRB |=  (1<<7); // OC0A
+ 4ba:	27 9a       	sbi	0x04, 7	; 4
+	DDRD |=  (1<<0); // OC0B
+ 4bc:	50 9a       	sbi	0x0a, 0	; 10
+	DDRB |=  (1<<5); // OC1A
+ 4be:	25 9a       	sbi	0x04, 5	; 4
+	DDRB |=  (1<<6); // OC1B
+ 4c0:	26 9a       	sbi	0x04, 6	; 4
+	
+	DDRD |=  (1<<4); // Direction 0
+ 4c2:	54 9a       	sbi	0x0a, 4	; 10
+	DDRD |=  (1<<5); // Direction 1
+ 4c4:	55 9a       	sbi	0x0a, 5	; 10
+	DDRD |=  (1<<6); // Direction 2
+ 4c6:	56 9a       	sbi	0x0a, 6	; 10
+	DDRD |=  (1<<7); // Direction 3
+ 4c8:	57 9a       	sbi	0x0a, 7	; 10
+ 4ca:	08 95       	ret
+
+000004cc <Set_Motor_Velocity>:
+
+void Set_Motor_Velocity(uint8_t motor_number, int16_t  velocity)
+{
+	
+	// We only have 4 motors
+	if (motor_number > 3)
+ 4cc:	84 30       	cpi	r24, 0x04	; 4
+ 4ce:	90 f5       	brcc	.+100    	; 0x534 <Set_Motor_Velocity+0x68>
+	{
+		return;
+	}
+
+
+	uint8_t reversing = (velocity < 0);
+ 4d0:	97 2f       	mov	r25, r23
+ 4d2:	99 1f       	adc	r25, r25
+ 4d4:	99 27       	eor	r25, r25
+ 4d6:	99 1f       	adc	r25, r25
+
+	// make the velocity have a positive value
+	if (reversing)
+ 4d8:	19 f0       	breq	.+6      	; 0x4e0 <Set_Motor_Velocity+0x14>
+	{
+		velocity = -velocity; 
+ 4da:	71 95       	neg	r23
+ 4dc:	61 95       	neg	r22
+ 4de:	71 09       	sbc	r23, r1
+ 4e0:	6f 3f       	cpi	r22, 0xFF	; 255
+ 4e2:	71 05       	cpc	r23, r1
+ 4e4:	14 f0       	brlt	.+4      	; 0x4ea <Set_Motor_Velocity+0x1e>
+ 4e6:	6e ef       	ldi	r22, 0xFE	; 254
+ 4e8:	70 e0       	ldi	r23, 0x00	; 0
+	if(velocity > 254)
+	{
+		velocity = 254;
+	}
+	
+	switch (motor_number)
+ 4ea:	81 30       	cpi	r24, 0x01	; 1
+ 4ec:	69 f0       	breq	.+26     	; 0x508 <Set_Motor_Velocity+0x3c>
+ 4ee:	28 f0       	brcs	.+10     	; 0x4fa <Set_Motor_Velocity+0x2e>
+ 4f0:	82 30       	cpi	r24, 0x02	; 2
+ 4f2:	89 f0       	breq	.+34     	; 0x516 <Set_Motor_Velocity+0x4a>
+ 4f4:	83 30       	cpi	r24, 0x03	; 3
+ 4f6:	f1 f4       	brne	.+60     	; 0x534 <Set_Motor_Velocity+0x68>
+ 4f8:	16 c0       	rjmp	.+44     	; 0x526 <Set_Motor_Velocity+0x5a>
+	{
+		case 0:
+		{
+			// Set the data direction bit
+			if (reversing)
+ 4fa:	99 23       	and	r25, r25
+ 4fc:	11 f0       	breq	.+4      	; 0x502 <Set_Motor_Velocity+0x36>
+			{
+				PORTD |= (1<<4);
+ 4fe:	5c 9a       	sbi	0x0b, 4	; 11
+ 500:	01 c0       	rjmp	.+2      	; 0x504 <Set_Motor_Velocity+0x38>
+			} 
+			else
+			{
+				PORTD &= ~(1<<4);
+ 502:	5c 98       	cbi	0x0b, 4	; 11
+			}
+
+			// Set the duty cycle
+			OCR0A = velocity;
+ 504:	67 bd       	out	0x27, r22	; 39
+			break;
+ 506:	08 95       	ret
+		}
+		case 1:
+		{
+			// Set the data direction bit
+			if (reversing)
+ 508:	99 23       	and	r25, r25
+ 50a:	11 f0       	breq	.+4      	; 0x510 <Set_Motor_Velocity+0x44>
+			{
+				PORTD |= (1<<5);
+ 50c:	5d 9a       	sbi	0x0b, 5	; 11
+ 50e:	01 c0       	rjmp	.+2      	; 0x512 <Set_Motor_Velocity+0x46>
+			}
+			else
+			{
+				PORTD &= ~(1<<5);
+ 510:	5d 98       	cbi	0x0b, 5	; 11
+			}
+
+			// Set the duty cycle
+			OCR0B = velocity;
+ 512:	68 bd       	out	0x28, r22	; 40
+			break;
+ 514:	08 95       	ret
+		}
+		case 2:
+		{
+			// Set the data direction bit
+			if (reversing)
+ 516:	99 23       	and	r25, r25
+ 518:	11 f0       	breq	.+4      	; 0x51e <Set_Motor_Velocity+0x52>
+			{
+				PORTD |= (1<<6);
+ 51a:	5e 9a       	sbi	0x0b, 6	; 11
+ 51c:	01 c0       	rjmp	.+2      	; 0x520 <Set_Motor_Velocity+0x54>
+			}
+			else
+			{
+				PORTD &= ~(1<<6);
+ 51e:	5e 98       	cbi	0x0b, 6	; 11
+			}
+
+			// Set the duty cycle
+			OCR1AL = velocity;
+ 520:	60 93 88 00 	sts	0x0088, r22
+			break;
+ 524:	08 95       	ret
+		}
+		case 3:
+		{
+			// Set the data direction bit
+			if (reversing)
+ 526:	99 23       	and	r25, r25
+ 528:	11 f0       	breq	.+4      	; 0x52e <Set_Motor_Velocity+0x62>
+			{
+				PORTD |= (1<<7);
+ 52a:	5f 9a       	sbi	0x0b, 7	; 11
+ 52c:	01 c0       	rjmp	.+2      	; 0x530 <Set_Motor_Velocity+0x64>
+			}
+			else
+			{
+				PORTD &= ~(1<<7);
+ 52e:	5f 98       	cbi	0x0b, 7	; 11
+			}
+			
+			// Set the duty cycle
+			OCR1BL = velocity;
+ 530:	60 93 8a 00 	sts	0x008A, r22
+ 534:	08 95       	ret
+
+00000536 <_exit>:
+ 536:	f8 94       	cli
+
+00000538 <__stop_program>:
+ 538:	ff cf       	rjmp	.-2      	; 0x538 <__stop_program>
