@@ -54,7 +54,7 @@ int intIndex = 0;
 
 //boolean value indicating when a complete word has been entered
 char completeWord = 0;
-char timerVal = 0;
+unsigned char timerVal = 0;
 
 /** Standard file stream for the CDC interface when set up, so that the virtual CDC COM port can be
  *  used like any regular character stream in the C APIs
@@ -247,7 +247,7 @@ void timerInit()
     
     OCR1A = 0xF440;
     
-    TIMSK1 = 1;
+    TIMSK1 = 2;
     
     sei();
 }
@@ -297,16 +297,18 @@ ISR(USART1_RX_vect, ISR_BLOCK)
 }
  */
 
-ISR(TIMER1_OVF_vect)
+ISR(TIMER1_COMPA_vect)
 {
+    /*
     timerVal++;
     TCNT1 = 0;
-    if(timerVal == 60){
+    if(timerVal >= 250){
         timerVal = 0;
         TCNT1 = 0;
         PORTD ^= (1<<4);
         fprintf(&USBSerialStream, 'tick');
-    }
+    }*/
+     
 }
 
 /** Event handler for the CDC Class driver Line Encoding Changed event.
